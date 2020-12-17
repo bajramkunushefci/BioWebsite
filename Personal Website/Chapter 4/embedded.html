@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+
+<!-- Fig. 4.3: embedded.html -->
+<!-- Embedded style sheet. -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="/Images/personallogo.png" />
+        <title>Embedded Style Sheet</title>
+
+        <!-- this begins the style sheet section! -->
+        <style type="text/css">
+            em  { font-weight: bold;
+                  color: black; }
+            h1  { font-family: tahoma, Arial, Helvetica, sans-serif; }  
+            p   { font-size: 12pt;
+                  font-family: Arial, Helvetica, sans-serif; }
+            .special  { color: purple;}   
+        </style>
+    </head>
+    <body>
+        <!-- this attribute applies the .special style class -->
+        <h1 class="special">Deitel & Associates, Inc.</h1>
+
+        <p>Deitel & Associates, Inc. is an authoring and corporate training organization specializing in programming languages, Internet and Web Technology, Iphone and Android app development, and object technology education.</p>
+
+        <h1>Clients</h1>
+        <p class="special">The company's clients include many <em>Fortune 1000 companies</em>, government agencies, branches of the military and business organizations.</p><br>
+        <button><a href="/chapter4.html">Go Back</a></button>
+    </body>
+</html>
