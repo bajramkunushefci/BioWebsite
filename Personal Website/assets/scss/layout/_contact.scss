@@ -1,0 +1,30 @@
+.contact-nav {
+    background-color: deepskyblue;
+    nav {
+        display: flex;
+        align-items: center;
+        background-color: lightgray;
+        height: 19vh;
+        .personal-logo {
+            width: 100%;
+            img {
+                width: 24%;
+            }
+        }
+        ul {
+            width: 100%;
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            li {
+                a {
+                    text-decoration: none;
+                    color: black;
+                    &:hover {
+                        color: rgb(104, 175, 37);
+                    }
+                }
+            }
+        }
+    }
+}

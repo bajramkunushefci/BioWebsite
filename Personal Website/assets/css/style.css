@@ -9,10 +9,10 @@
   display: flex;
   align-items: center;
   background-color: lightgray;
-  opacity: 1;
+  height: 19vh;
 }
 .section-1 nav .personal-logo {
-  padding-bottom: 20px;
+  width: 100%;
 }
 .section-1 nav .personal-logo img {
   width: 24%;
@@ -25,7 +25,99 @@
 }
 .section-1 nav ul li a {
   text-decoration: none;
+  color: black;
+}
+.section-1 nav ul li a:hover {
+  color: #68af25;
 }
 .section-1 .site-heading {
   width: 100%;
+  position: relative;
+  right: 10px;
+  top: 165px;
+  color: #222;
+}
+
+.assignments-nav {
+  background-color: yellow;
+}
+.assignments-nav nav {
+  display: flex;
+  align-items: center;
+  background-color: lightgray;
+  height: 19vh;
+}
+.assignments-nav nav .personal-logo {
+  width: 100%;
+}
+.assignments-nav nav .personal-logo img {
+  width: 24%;
+}
+.assignments-nav nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+.assignments-nav nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+.assignments-nav nav ul li a:hover {
+  color: #68af25;
+}
+
+.about-nav nav {
+  display: flex;
+  align-items: center;
+  background-color: lightgray;
+  height: 19vh;
+}
+.about-nav nav .personal-logo {
+  width: 100%;
+}
+.about-nav nav .personal-logo img {
+  width: 24%;
+}
+.about-nav nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+.about-nav nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+.about-nav nav ul li a:hover {
+  color: #68af25;
+}
+
+.contact-nav {
+  background-color: deepskyblue;
+}
+.contact-nav nav {
+  display: flex;
+  align-items: center;
+  background-color: lightgray;
+  height: 19vh;
+}
+.contact-nav nav .personal-logo {
+  width: 100%;
+}
+.contact-nav nav .personal-logo img {
+  width: 24%;
+}
+.contact-nav nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+.contact-nav nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+.contact-nav nav ul li a:hover {
+  color: #68af25;
 }
