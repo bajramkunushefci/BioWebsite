@@ -36,6 +36,101 @@
   right: 10px;
   top: 165px;
   color: #222;
+  text-align: center;
+}
+
+.section-2 {
+  width: 100%;
+}
+.section-2 .info {
+  width: 100%;
+  margin-top: 30px;
+}
+.section-2 .info .section-header {
+  text-align: center;
+}
+.section-2 .info .section-header h3 {
+  font-weight: 600;
+}
+.section-2 .info .section-header h3 span {
+  color: red;
+}
+.section-2 .info .section-paragraph {
+  text-align: center;
+  margin-top: 20px;
+}
+.section-2 .info .section-paragraph p {
+  font-weight: 600;
+  color: #212529;
+}
+.section-2 .info .information {
+  text-align: center;
+  margin-top: 20px;
+}
+.section-2 .info .information p {
+  font-weight: 600;
+  color: #212529;
+  margin-bottom: 25px;
+}
+.section-2 .info .information ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+.section-2 .info .information ul li {
+  width: 100%;
+}
+.section-2 .info .information ul li:first-child {
+  color: orange;
+}
+.section-2 .info .information ul li:nth-child(2) {
+  color: #1919e4;
+}
+.section-2 .info .information ul li:last-child {
+  color: #f1f10c;
+}
+.section-2 .info .information ul li i {
+  width: 100%;
+  font-size: 105px;
+}
+
+footer {
+  width: 100%;
+  height: 22vh;
+  background-color: lightgray;
+}
+footer .contacts {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 40px;
+}
+footer .contacts p {
+  font-size: 17px;
+  font-weight: bold;
+}
+footer .contacts .links a {
+  text-decoration: none;
+  margin-left: 7px;
+}
+footer .contacts .links a:first-child {
+  color: #1e1eaf;
+}
+footer .contacts .links a:nth-child(2) {
+  color: #6f05ac;
+}
+footer .contacts .links a:last-child {
+  color: #e90202;
+}
+footer .contacts .links a i {
+  font-size: 22px;
+}
+footer .date {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  padding-top: 12px;
+  font-weight: bold;
 }
 
 .assignments-nav {
@@ -91,6 +186,16 @@
 }
 .about-nav nav ul li a:hover {
   color: #68af25;
+}
+
+.site-section {
+  width: 100%;
+}
+.site-section .my-image {
+  width: 100%;
+}
+.site-section .my-image img {
+  width: 100%;
 }
 
 .contact-nav {
