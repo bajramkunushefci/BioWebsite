@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<!-- Fig. 8.6: Interest.html -->
+<!-- Compound interest calculation with a for loop. -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculating Coumpound Interest</title>
+        <style>
+            table {
+                width: 300px;
+                border-collapse: collapse;
+                background-color: lightblue;
+            }
+            table, td, th {
+                border: 1px solid black;
+                padding: 4px;
+            }
+            th {
+                text-align: left;
+                color: white;
+                background-color: darkblue;
+            }
+            tr.oddrow {
+                background-color: white;
+            }
+        </style>
+
+        <script>
+            var amount; // current amount of money
+            var principal = 1000.00; // principal amount
+            var rate = 0.05; // interest rate
+
+            document.writeln("<table>"); // begin the table
+            document.writeln("<caption>Calculating Compound Interest</caption>");
+            document.writeln("<thead><tr><th>Year</th>"); // year column heading
+            document.writeln("<th>Amount on deposit</th>"); // amount column heading
+            document.writeln("</tr></thead><tbody>");
+
+            // output a table row for each year
+            for (var year = 1; year <= 10; ++year)
+            {
+                amount = principal * Math.pow(1.0 + rate, year);
+
+                if (year % 2 !== 0)
+                    document.writeln("<tr class='oddrow'><td>" + year + "</td><td>" + amount.toFixed(2) + "</td></tr>");
+                else
+                    document.writeln("<tr><td>" + year + "</td><td>" + amount.toFixed(2) + "</td></tr>");
+            } // end for
+
+            document.writeln("</tbody></table>");
+        </script>
+    </head>
+    <body>
+        <button><a href="../chapter8.html">Go Back</a></button>
+    </body>
+</html>

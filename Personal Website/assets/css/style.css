@@ -176,6 +176,82 @@ footer .date {
   color: #f5f4f4;
 }
 
+.assignments-section {
+  width: 100%;
+  height: 55vh;
+}
+.assignments-section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 25px;
+}
+.assignments-section ul {
+  list-style: none;
+  color: darkslategray;
+  width: 8em;
+  padding-left: 24px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #396d6d;
+  color: white;
+  margin-left: 50px;
+  cursor: pointer;
+  font-weight: 600;
+  border: 1px solid royalblue;
+}
+.assignments-section ul:hover a {
+  display: block;
+}
+.assignments-section ul li {
+  width: 100%;
+}
+.assignments-section ul li a {
+  text-decoration: none;
+  color: white;
+  padding-top: 5px;
+  display: none;
+  font-weight: normal;
+}
+
+footer {
+  width: 100%;
+  height: 22vh;
+  background-color: #6fbba2;
+}
+footer .contacts {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 40px;
+}
+footer .contacts p {
+  font-size: 17px;
+  font-weight: bold;
+}
+footer .contacts .links a {
+  text-decoration: none;
+  margin-left: 7px;
+}
+footer .contacts .links a:first-child {
+  color: #1e1eaf;
+}
+footer .contacts .links a:nth-child(2) {
+  color: #6f05ac;
+}
+footer .contacts .links a:last-child {
+  color: #e90202;
+}
+footer .contacts .links a i {
+  font-size: 22px;
+}
+footer .date {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  padding-top: 12px;
+  font-weight: bold;
+}
+
 .about-nav nav {
   display: flex;
   align-items: center;
