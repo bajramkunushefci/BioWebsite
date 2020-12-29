@@ -1,10 +1,10 @@
 .assignments-nav {
-    background-color: yellow;
     nav {
         display: flex;
         align-items: center;
-        background-color: lightgray;
+        background-color: #6fbba2;
         height: 19vh;
+        font-weight: 600;
         .personal-logo {
             width: 100%;
             img {
@@ -21,7 +21,7 @@
                     text-decoration: none;
                     color: black;
                     &:hover {
-                        color: rgb(104, 175, 37);
+                        color: #f5f4f4;
                     }
                 }
             }

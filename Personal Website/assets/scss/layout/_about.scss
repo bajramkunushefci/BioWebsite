@@ -2,8 +2,10 @@
     nav {
         display: flex;
         align-items: center;
-        background-color: lightgray;
+        background-color: #6fbba2;
+        // background-color: #89bbaa;
         height: 19vh;
+        font-weight: 600;
         .personal-logo {
             width: 100%;
             img {
@@ -20,7 +22,7 @@
                     text-decoration: none;
                     color: black;
                     &:hover {
-                        color: rgb(104, 175, 37);
+                        color: #f5f4f4;
                     }
                 }
             }
@@ -29,10 +31,28 @@
 }
 .site-section {
     width: 100%;
+    display: flex;
+    // background-color: #f5f4f4;
+    background-color: #f3f3f3;
+    // background-color: #dfd5b0;
     .my-image {
-        width: 100%;
+        width: 50%;
+        margin-left: 7%;
         img {
             width: 100%;
         }
     }
+    .personal-information {
+        width: 36%;
+        margin-right: 7%;
+        margin-left: 55px;
+        margin-top: 50px;
+        h3 {
+            font-weight: 600;
+        }
+    }
+}
+footer {
+    background-color: #6fbba2;
+    // background-color: #89bbaa;
 }
