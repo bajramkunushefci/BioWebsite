@@ -6,10 +6,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/Images/personallogo.png" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="shortcut icon" href="../assets/Images/BK.Logo.png" />
+    <link rel="stylesheet" href="../assets/css/style.css">
     <title>Box Shadow</title>
     <style>
-        div {
+        .combined div {
             width: 200px;
             height: 200px;
             background-color: plum;
@@ -18,22 +21,31 @@
             margin-right: 120px;
             margin-top: 40px;
         }
-        #box2 {
+        .combined #box2 {
             width: 200px;
             height: 200px;
             background-color: plum;
             box-shadow: -25px -25px 50px dimgray;
         }
-        h2 {
+        .combined div h2 {
             text-align: center;
         }
     </style>
 </head>
 <body>
-    <div>
-        <h2>Box Shadow Bottom and Right</h2>
+    <nav class="examples-nav">
+        <button class="examples-button">
+           <a href="../chapter5.html">
+              <i class="fas fa-arrow-left"></i>
+              Go Back
+           </a>
+        </button>
+    </nav>
+    <div class="combined">
+        <div>
+            <h2>Box Shadow Bottom and Right</h2>
+        </div>
+        <div id="box2"><h2>Box Shadow Top and Left</h2></div><br>
     </div>
-    <div id="box2"><h2>Box Shadow Top and Left</h2></div><br>
-    <button><a href="../chapter5.html">Go Back</a></button>
 </body>
 </html>

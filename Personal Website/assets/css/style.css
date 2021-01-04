@@ -1,41 +1,48 @@
-.main-nav {
+body {
+  width: 100%;
+  height: 100%;
+}
+body .main-nav {
   width: 100%;
 }
-.main-nav nav {
+body .main-nav nav {
   display: flex;
   align-items: center;
   background-color: #6fbba2;
   height: 19vh;
   font-weight: 600;
 }
-.main-nav nav .personal-logo {
+body .main-nav nav .personal-logo {
   width: 100%;
 }
-.main-nav nav .personal-logo img {
+body .main-nav nav .personal-logo img {
   width: 24%;
 }
-.main-nav nav ul {
+body .main-nav nav ul {
   width: 100%;
   list-style: none;
   display: flex;
   justify-content: space-around;
 }
-.main-nav nav ul li a {
+body .main-nav nav ul li a {
   text-decoration: none;
   color: black;
 }
-.main-nav nav ul li a:hover {
+body .main-nav nav ul li a:hover {
   color: #f5f4f4;
+  transition: 0.5s;
 }
-
-.section-1 {
+body .testing {
+  width: 100%;
+}
+body .testing .section-1 {
   background-size: cover;
   background-position: center;
   width: 100%;
   height: 81vh;
   opacity: 0.8;
 }
-.section-1 .site-heading {
+body .testing .section-1 .site-heading {
   width: 100%;
   position: relative;
   right: 10px;
@@ -43,105 +50,103 @@
   color: black;
   text-align: center;
 }
-.section-1 .site-heading h1 {
+body .testing .section-1 .site-heading h1 {
   font-weight: 600;
 }
-.section-1 .site-heading h1 span {
+body .testing .section-1 .site-heading h1 span {
   color: #258b69;
   font-weight: 700;
 }
-
-.section-2 {
+body .testing .section-2 {
   width: 100%;
   background-color: #f3f3f3;
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.section-2 .info {
+body .testing .section-2 .info {
   width: 100%;
 }
-.section-2 .info .section-header {
+body .testing .section-2 .info .section-header {
   text-align: center;
 }
-.section-2 .info .section-header h3 {
+body .testing .section-2 .info .section-header h3 {
   font-weight: 600;
 }
-.section-2 .info .section-header h3 span {
+body .testing .section-2 .info .section-header h3 span {
   color: #258b69;
 }
-.section-2 .info .section-paragraph {
+body .testing .section-2 .info .section-paragraph {
   text-align: center;
   margin-top: 20px;
 }
-.section-2 .info .section-paragraph p {
+body .testing .section-2 .info .section-paragraph p {
   font-weight: 600;
   color: #212529;
 }
-.section-2 .info .information {
+body .testing .section-2 .info .information {
   text-align: center;
   margin-top: 20px;
 }
-.section-2 .info .information p {
+body .testing .section-2 .info .information p {
   font-weight: 600;
   color: #212529;
   margin-bottom: 25px;
 }
-.section-2 .info .information ul {
+body .testing .section-2 .info .information ul {
   display: flex;
   justify-content: space-around;
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.section-2 .info .information ul li {
+body .testing .section-2 .info .information ul li {
   width: 100%;
 }
-.section-2 .info .information ul li:first-child {
+body .testing .section-2 .info .information ul li:first-child {
   color: orange;
 }
-.section-2 .info .information ul li:nth-child(2) {
+body .testing .section-2 .info .information ul li:nth-child(2) {
   color: #1919e4;
 }
-.section-2 .info .information ul li:last-child {
+body .testing .section-2 .info .information ul li:last-child {
   color: #f1f10c;
 }
-.section-2 .info .information ul li i {
+body .testing .section-2 .info .information ul li i {
   width: 100%;
   font-size: 105px;
 }
-
-footer {
+body footer {
   width: 100%;
   height: 22vh;
   background-color: #6fbba2;
 }
-footer .contacts {
+body footer .contacts {
   width: 100%;
   display: flex;
   justify-content: space-around;
   padding-top: 40px;
 }
-footer .contacts p {
+body footer .contacts p {
   font-size: 17px;
   font-weight: bold;
 }
-footer .contacts .links a {
+body footer .contacts .links a {
   text-decoration: none;
   margin-left: 7px;
 }
-footer .contacts .links a:first-child {
+body footer .contacts .links a:first-child {
   color: #1e1eaf;
 }
-footer .contacts .links a:nth-child(2) {
+body footer .contacts .links a:nth-child(2) {
   color: #6f05ac;
 }
-footer .contacts .links a:last-child {
+body footer .contacts .links a:last-child {
   color: #e90202;
 }
-footer .contacts .links a i {
+body footer .contacts .links a i {
   font-size: 22px;
 }
-footer .date {
+body footer .date {
   margin: 0;
   padding: 0;
   text-align: center;
@@ -149,45 +154,58 @@ footer .date {
   font-weight: bold;
 }
 
-.assignments-nav nav {
+html {
+  height: 100%;
+}
+html body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+html body .assignments-nav {
+  width: 100%;
+}
+html body .assignments-nav nav {
   display: flex;
   align-items: center;
   background-color: #6fbba2;
   height: 19vh;
   font-weight: 600;
 }
-.assignments-nav nav .personal-logo {
+html body .assignments-nav nav .personal-logo {
   width: 100%;
 }
-.assignments-nav nav .personal-logo img {
+html body .assignments-nav nav .personal-logo img {
   width: 24%;
 }
-.assignments-nav nav ul {
+html body .assignments-nav nav ul {
   width: 100%;
   list-style: none;
   display: flex;
   justify-content: space-around;
 }
-.assignments-nav nav ul li a {
+html body .assignments-nav nav ul li a {
   text-decoration: none;
   color: black;
 }
-.assignments-nav nav ul li a:hover {
+html body .assignments-nav nav ul li a:hover {
   color: #f5f4f4;
+  transition: 0.5s;
 }
-
-.assignments-section {
-  width: 100%;
-  height: 55vh;
+html body .assignments-section {
+  flex: 1 0 auto;
 }
-.assignments-section h2 {
+html body .assignments-section h2 {
   text-align: center;
-  margin-bottom: 40px;
   margin-top: 25px;
+  margin-bottom: 15px;
 }
-.assignments-section ul {
+html body .assignments-section p {
+  text-align: center;
+  margin-bottom: 30px;
+}
+html body .assignments-section ul {
   list-style: none;
-  color: darkslategray;
   width: 8em;
   padding-left: 24px;
   padding-top: 5px;
@@ -199,52 +217,53 @@ footer .date {
   font-weight: 600;
   border: 1px solid royalblue;
 }
-.assignments-section ul:hover a {
+html body .assignments-section ul:hover a {
   display: block;
+  padding-left: 5px;
 }
-.assignments-section ul li {
+html body .assignments-section ul li {
   width: 100%;
 }
-.assignments-section ul li a {
+html body .assignments-section ul li a {
   text-decoration: none;
   color: white;
   padding-top: 5px;
   display: none;
   font-weight: normal;
 }
-
-footer {
+html body footer {
   width: 100%;
   height: 22vh;
   background-color: #6fbba2;
+  flex-shrink: 0;
 }
-footer .contacts {
+html body footer .contacts {
   width: 100%;
   display: flex;
   justify-content: space-around;
   padding-top: 40px;
 }
-footer .contacts p {
+html body footer .contacts p {
   font-size: 17px;
   font-weight: bold;
 }
-footer .contacts .links a {
+html body footer .contacts .links a {
   text-decoration: none;
   margin-left: 7px;
 }
-footer .contacts .links a:first-child {
+html body footer .contacts .links a:first-child {
   color: #1e1eaf;
 }
-footer .contacts .links a:nth-child(2) {
+html body footer .contacts .links a:nth-child(2) {
   color: #6f05ac;
 }
-footer .contacts .links a:last-child {
+html body footer .contacts .links a:last-child {
   color: #e90202;
 }
-footer .contacts .links a i {
+html body footer .contacts .links a i {
   font-size: 22px;
 }
-footer .date {
+html body footer .date {
   margin: 0;
   padding: 0;
   text-align: center;
@@ -252,56 +271,96 @@ footer .date {
   font-weight: bold;
 }
 
-.about-nav nav {
+body {
+  background-color: #f3f3f3;
+}
+body .about-nav nav {
   display: flex;
   align-items: center;
   background-color: #6fbba2;
   height: 19vh;
   font-weight: 600;
 }
-.about-nav nav .personal-logo {
+body .about-nav nav .personal-logo {
   width: 100%;
 }
-.about-nav nav .personal-logo img {
+body .about-nav nav .personal-logo img {
   width: 24%;
+  cursor: pointer;
 }
-.about-nav nav ul {
+body .about-nav nav ul {
   width: 100%;
   list-style: none;
   display: flex;
   justify-content: space-around;
 }
-.about-nav nav ul li a {
+body .about-nav nav ul li a {
   text-decoration: none;
   color: black;
 }
-.about-nav nav ul li a:hover {
+body .about-nav nav ul li a:hover {
   color: #f5f4f4;
+  transition: 0.5s;
 }
-
-.site-section {
+body .site-section {
   width: 100%;
   display: flex;
   background-color: #f3f3f3;
 }
-.site-section .my-image {
+body .site-section .my-image {
   width: 50%;
   margin-left: 7%;
 }
-.site-section .my-image img {
+body .site-section .my-image img {
   width: 100%;
 }
-.site-section .personal-information {
+body .site-section .personal-information {
   width: 36%;
   margin-right: 7%;
   margin-left: 55px;
   margin-top: 50px;
 }
-.site-section .personal-information h3 {
+body .site-section .personal-information h3 {
   font-weight: 600;
+  color: darkslategray;
+  margin-bottom: 20px;
 }
-
-footer {
+body .more-about {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+body .more-about h3 {
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+body .more-about h3 span {
+  color: darkslategray;
+}
+body .more-about table {
+  text-align: center;
+  border: none;
+}
+body .more-about table tr {
+  width: 100%;
+}
+body .more-about table tr th {
+  border: none;
+  border-color: darkolivegreen;
+  padding: 10px;
+  background-color: darkslategray;
+  color: white;
+}
+body .more-about table tr td {
+  border: none;
+  border-color: darkolivegreen;
+  padding: 5px 30px;
+  background-color: #6fbba2;
+}
+body footer {
   background-color: #6fbba2;
 }
 
@@ -333,6 +392,7 @@ footer {
 }
 .contact-nav nav ul li a:hover {
   color: #f5f4f4;
+  transition: 0.5s;
 }
 
 .contact-section {
@@ -373,15 +433,18 @@ footer {
   margin-top: 20px;
   margin-bottom: 40px;
 }
-.contact-section .contact-options .contact-form form .submit-button input {
+.contact-section .contact-options .contact-form form .submit-button button {
   border: none;
   padding: 15px;
   background-color: darkslategray;
   border-radius: 100px;
   letter-spacing: 1px;
-  color: white;
   font-size: 13px;
   font-weight: 600;
+}
+.contact-section .contact-options .contact-form form .submit-button button a {
+  text-decoration: none;
+  color: white;
 }
 .contact-section .contact-options .contact-details h3 {
   margin-bottom: 25px;
@@ -398,4 +461,62 @@ footer {
 }
 .contact-section .contact-options .contact-details ul li p {
   margin-top: 10px;
+}
+
+.chaptersWrapper {
+  width: 100%;
+  height: 100%;
+  background-color: #f3f3f3;
+}
+.chaptersWrapper button {
+  margin-top: 20px;
+  margin-left: 20px;
+  border: none;
+  padding: 15px;
+  background-color: #f3f3f3;
+  letter-spacing: 1px;
+}
+.chaptersWrapper button a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+.chaptersWrapper .chapters-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.chaptersWrapper .chapters-links h4 {
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: darkslategray;
+}
+.chaptersWrapper .chapters-links li a {
+  color: darkslateblue;
+}
+.chaptersWrapper .chapters-links li a:hover {
+  text-decoration: none;
+  color: #000000;
+}
+.chaptersWrapper .chapters-links li .different {
+  padding-left: 9px;
+}
+
+.examples-nav {
+  width: 100%;
+}
+.examples-nav .examples-button {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  border: none;
+  padding: 15px;
+  background-color: #f3f3f3;
+  letter-spacing: 1px;
+}
+.examples-nav .examples-button a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
 }

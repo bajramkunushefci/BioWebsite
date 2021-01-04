@@ -6,10 +6,13 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="/Images/personallogo.png" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="shortcut icon" href="../assets/Images/BK.Logo.png" />
+        <link rel="stylesheet" href="../assets/css/style.css">
         <title>Linear Gradient</title>
         <style>
-            div {
+            .combined div {
                 width: 200px;
                 height: 200px;
                 border: 3px solid navy;
@@ -21,7 +24,7 @@
                 float: left;
                 margin-right: 15px;
             }
-            #horizontal {
+            .combined #horizontal {
                 width: 200px;
                 height: 200px;
                 border: 3px solid orange;
@@ -32,7 +35,7 @@
                 background: linear-gradient( 90deg, white 15%, yellow 50%, orange 75%);   
                 margin-right: 15px;
             }
-            #angle {
+            .combined #angle {
                 width: 200px;
                 height: 200px;
                 border: 3px solid purple;
@@ -45,13 +48,22 @@
         </style>
     </head>
     <body>
-        <div>
-            <h2>Vertical Linear Gradient</h2>
+        <nav class="examples-nav">
+            <button class="examples-button">
+               <a href="../chapter5.html">
+                  <i class="fas fa-arrow-left"></i>
+                  Go Back
+               </a>
+            </button>
+        </nav>
+        <div class="combined">
+            <div>
+                <h2>Vertical Linear Gradient</h2>
+            </div>
+            <div id="horizontal">
+                <h2>Horizontal Linear Gradient</h2>
+            </div>
+            <div id="angle"><h2>Diagonal Linear Gradient</h2></div><br>
         </div>
-        <div id="horizontal">
-            <h2>Horizontal Linear Gradient</h2>
-        </div>
-        <div id="angle"><h2>Diagonal Linear Gradient</h2></div><br>
-        <button><a href="../chapter5.html">Go Back</a></button>
     </body>
 </html>

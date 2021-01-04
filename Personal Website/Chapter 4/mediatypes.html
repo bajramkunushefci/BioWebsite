@@ -3,44 +3,54 @@
 <!-- Fig. 4.16: mediatypes.html -->
 <!-- CSS media types. -->
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/Images/personallogo.png" />
-    <title>Media Types</title>
-    <style>
-        @media all {
-            body {
-                background-color: steelblue;
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="shortcut icon" href="../assets/Images/BK.Logo.png" />
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <title>Media Types</title>
+        <style>
+            @media all {
+                body {
+                    background-color: steelblue;
+                }
+                h1 {
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    color: palegreen;
+                }
+                p {
+                    font-size: 12pt;
+                    color: white;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+            } /* End @media all declaration. */
+            @media print {
+                body {
+                    background-color: white;
+                }
+                h1 {
+                    color: seagreen;
+                }
+                p {
+                    font-size: 14pt;
+                    color: steelblue;
+                    font-family: 'Times New Roman', Times, serif;
+                } /* @media print declaration. */
             }
-            h1 {
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
-                color: palegreen;
-            }
-            p {
-                font-size: 12pt;
-                color: white;
-                font-family: Arial, Helvetica, sans-serif;
-            }
-        } /* End @media all declaration. */
-        @media print {
-            body {
-                background-color: white;
-            }
-            h1 {
-                color: seagreen;
-            }
-            p {
-                font-size: 14pt;
-                color: steelblue;
-                font-family: 'Times New Roman', Times, serif;
-            } /* @media print declaration. */
-        }
-    </style>
-</head>
-<body>
-    <h1>CSS Media Types Example</h1>
-    <p>This example uses CSS media types to vary how the page appears in print and on any other media. This text will appear in one font on the screen and a different font on paper or in a print preview. To see the difference in Internet Explorer, go to the Print Preview from the File menu.</p><br>
-    <button><a href="../chapter4.html">Go Back</a></button>
-</body>
+        </style>
+    </head>
+    <body>
+        <nav class="examples-nav">
+            <button class="examples-button">
+               <a href="../chapter4.html">
+                  <i class="fas fa-arrow-left"></i>
+                  Go Back
+               </a>
+            </button>
+        </nav>
+        <h1>CSS Media Types Example</h1>
+        <p>This example uses CSS media types to vary how the page appears in print and on any other media. This text will appear in one font on the screen and a different font on paper or in a print preview. To see the difference in Internet Explorer, go to the Print Preview from the File menu.</p><br>
+    </body>
 </html>

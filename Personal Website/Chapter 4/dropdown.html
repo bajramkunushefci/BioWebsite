@@ -6,37 +6,41 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="/Images/personallogo.png" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="shortcut icon" href="../assets/Images/BK.Logo.png" />
+        <link rel="stylesheet" href="../assets/css/style.css">
         <title>Drop-Down Menu</title>
         <style>
             body {
                 font-family: Arial, Helvetica, sans-serif;
             }
-            nav {
+            .navWrapper {
                 font-weight: bold;
                 color: white;
                 border: 2px solid royalblue;
                 text-align: center;
                 width: 10em;
                 background-color: royalblue;
+                margin-top: 20px;
             }
-            nav ul {
+            .navWrapper ul {
                 display: none;
                 list-style: none;
                 margin: 0;
                 padding: 0;
             }
-            nav:hover ul {
+            .navWrapper:hover ul {
                 display: block;
             }
-            nav ul li {
+            .navWrapper ul li {
                 border-top: 2px solid royalblue;
                 background-color: white;
                 width: 10em;
                 color: black;
                 cursor: pointer;
             }
-            nav ul li:hover {
+            .navWrapper ul li:hover {
                 background-color: powderblue;
             }
             a {
@@ -45,7 +49,15 @@
         </style>
     </head>
     <body>
-        <nav>Menu
+        <nav class="examples-nav">
+            <button class="examples-button">
+               <a href="../chapter4.html">
+                  <i class="fas fa-arrow-left"></i>
+                  Go Back
+               </a>
+            </button>
+        </nav>
+        <nav class="navWrapper">Menu
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">News</a></li>
@@ -54,6 +66,5 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav><br>
-        <button><a href="../chapter4.html">Go Back</a></button>
     </body>
 </html>
