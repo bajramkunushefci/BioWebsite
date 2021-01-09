@@ -3,13 +3,16 @@
     nav {
         display: flex;
         align-items: center;
-        background-color: #6fbba2;
+        background-color: rgb(70, 130, 130);
         height: 19vh;
         font-weight: 600;
         .personal-logo {
             width: 100%;
+            height: 100%;
             img {
-                width: 24%;
+                max-width: 100%;
+                height: 100%;
+                cursor: pointer;
             }
         }
         ul {
@@ -20,11 +23,14 @@
             li {
                 a {
                     text-decoration: none;
-                    color: black;
+                    color: #f5f4f4;
                     &:hover {
-                        color: #f5f4f4;
+                        color: #014242;
                         transition: .5s;
                     }
+                }
+                .active {
+                    color: #014242;
                 }
             }
         }
@@ -32,13 +38,13 @@
 }
 .contact-section {
     width: 100%;
-    background-color: #f3f3f3;
+    background-color: #f5f3f3;
     .contact-heading {
         text-align: center;
         color: black;
         h2 {
             span {
-                color: #4cac8c;
+                color: rgb(60, 120, 120);
                 font-weight: 700;
             }
         }
@@ -105,5 +111,44 @@
                 }
             }
         }
+    }
+}
+.contact-footer {
+    width: 100%;
+    height: 22vh;
+    background-color: rgb(70, 130, 130);
+    flex-shrink: 0;
+    .contacts {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding-top: 40px;
+        p {
+            font-size: 17px;
+            font-weight: bold;
+            color: #f5f4f4;
+        }
+        .links {
+            a {
+                text-decoration: none;
+                margin-left: 7px;
+                i {
+                    font-size: 22px;
+                    color: black;
+                    &:hover {
+                        color: #f5f4f4;
+                        transition: .5s;
+                    }
+                }
+            }
+        }
+    }
+    .date {
+        color: #f5f4f4;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        padding-top: 12px;
+        font-weight: bold;
     }
 }

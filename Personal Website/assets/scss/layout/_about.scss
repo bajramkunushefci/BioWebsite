@@ -4,14 +4,15 @@ body {
         nav {
             display: flex;
             align-items: center;
-            background-color: #6fbba2;
-            // background-color: #89bbaa;
+            background-color: rgb(70, 130, 130) !important;
             height: 19vh;
             font-weight: 600;
             .personal-logo {
                 width: 100%;
+                height: 100%;
                 img {
-                    width: 24%;
+                    max-width: 100%;
+                    height: 100%;
                     cursor: pointer;
                 }
             }
@@ -23,11 +24,14 @@ body {
                 li {
                     a {
                         text-decoration: none;
-                        color: black;
+                        color: #f5f4f4;
                         &:hover {
-                            color: #f5f4f4;
+                            color: #014242;
                             transition: .5s;
                         }
+                    }
+                    .active {
+                        color: #014242;
                     }
                 }
             }
@@ -53,7 +57,7 @@ body {
             margin-top: 50px;
             h3 {
                 font-weight: 600;
-                color: darkslategray;
+                color: rgb(60, 120, 120);
                 margin-bottom: 20px;
             }
         }
@@ -69,7 +73,7 @@ body {
             font-weight: 600;
             margin-bottom: 40px;
             span {
-                color: darkslategray;
+                color: rgb(60, 120, 120);
             }
         }
         table {
@@ -79,22 +83,58 @@ body {
                 width: 100%;
                 th {
                     border: none;
-                    border-color: darkolivegreen;
+                    border-color: darkslategray;
                     padding: 10px;
                     background-color: darkslategray;
-                    color: white;
+                    // background-color: rgb(60, 120, 120);
+                    color: #f5f4f4;
                 }
                 td {
                     border: none;
-                    border-color: darkolivegreen;
+                    border-color: darkslategray;
                     padding: 5px 30px;
                     background-color: #6fbba2;
                 }
             }
         }  
     }
-    footer {
-        background-color: #6fbba2;
-        // background-color: #89bbaa;
+    .about-footer {
+        width: 100%;
+        height: 22vh;
+        background-color: rgb(70, 130, 130);
+        flex-shrink: 0;
+        .contacts {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            padding-top: 40px;
+            p {
+                font-size: 17px;
+                font-weight: bold;
+                color: #f5f4f4;
+            }
+            .links {
+                a {
+                    text-decoration: none;
+                    margin-left: 7px;
+                    i {
+                        font-size: 22px;
+                        color: black;
+                        &:hover {
+                            color: #f5f4f4;
+                            transition: .5s;
+                        }
+                    }
+                }
+            }
+        }
+        .date {
+            color: #f5f4f4;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            padding-top: 12px;
+            font-weight: bold;
+        }
     }
 }

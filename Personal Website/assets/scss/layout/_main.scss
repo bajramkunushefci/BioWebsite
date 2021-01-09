@@ -6,13 +6,25 @@ body {
         nav {
             display: flex;
             align-items: center;
-            background-color: #6fbba2;
+            // background-color: #6fbba2;
+            // background-color: darkslategray;
+            // background-color: rgb(60, 120, 120);
+            background-color: rgb(70, 130, 130) !important;
             height: 19vh;
             font-weight: 600;
+            // position: fixed;
+            // top: 0;
+            // left: 0;
+            // right: 0;
+            // bottom: 0;
+            // z-index: 999;
             .personal-logo {
                 width: 100%;
+                height: 100%;
                 img {
-                    width: 24%;
+                    max-width: 100%;
+                    height: 100%;
+                    cursor: pointer;
                 }
             }
             ul {
@@ -23,17 +35,20 @@ body {
                 li {
                     a {
                         text-decoration: none;
-                        color: black;
+                        color: #f5f4f4;
                         &:hover {
-                            color: #f5f4f4;
+                            color: #014242;
                             transition: .5s;
                         }
+                    }
+                    .active {
+                        color: #014242;
                     }
                 }
             }
         }
     }
-    .testing {
+    .sections-together {
         width: 100%;
         .section-1 {
                 background-size: cover;
@@ -51,9 +66,12 @@ body {
                 h1 {
                     font-weight: 600;
                     span {
-                        color: #258b69;
+                        color: rgb(60, 120, 120);
                         font-weight: 700;
                     }
+                }
+                strong {
+                    color: black;
                 }
             }
         }
@@ -67,16 +85,18 @@ body {
                 width: 100%;
                 .section-header {
                     text-align: center;
+                    transition-duration: .8s;
                     h3 {
                         font-weight: 600;
                         span {
-                            color: #258b69;
+                            color: rgb(60, 120, 120);
                         }
                     }
                 }
                 .section-paragraph {
                     text-align: center;
                     margin-top: 20px;
+                    transition-duration: .8s;
                     p {
                         font-weight: 600;
                         color: #212529;
@@ -85,6 +105,7 @@ body {
                 .information {
                     text-align: center;
                     margin-top: 20px;
+                    transition-duration: .8s;
                     p {
                         font-weight: 600;
                         color: #212529;
@@ -117,10 +138,11 @@ body {
             }
         }
     } 
-    footer {
+    .main-footer {
         width: 100%;
         height: 22vh;
-        background-color: #6fbba2;
+        background-color: rgb(70, 130, 130);
+        flex-shrink: 0;
         .contacts {
             width: 100%;
             display: flex;
@@ -129,27 +151,25 @@ body {
             p {
                 font-size: 17px;
                 font-weight: bold;
+                color: #f5f4f4;
             }
             .links {
                 a {
                     text-decoration: none;
                     margin-left: 7px;
-                    &:first-child {
-                        color: rgb(30, 30, 175);
-                    }
-                    &:nth-child(2) {
-                        color: #6f05ac;
-                    }
-                    &:last-child {
-                        color: rgb(233, 2, 2);
-                    }
                     i {
                         font-size: 22px;
+                        color: black;
+                        &:hover {
+                            color: #f5f4f4;
+                            transition: .5s;
+                        }
                     }
                 }
             }
         }
         .date {
+            color: #f5f4f4;
             margin: 0;
             padding: 0;
             text-align: center;
