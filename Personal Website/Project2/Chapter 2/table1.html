@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<!-- Fig. 2.12: table.html -->
+<!-- Creating a basic table -->
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+      <link rel="shortcut icon" href="../assets/Images/BK.Logo.png" />
+      <link rel="stylesheet" href="../assets/css/style.css">
+      <title>A simple HTML5 table</title>
+   </head>
+   <body>
+      <nav class="examples-nav">
+         <button class="examples-button">
+            <a href="../chapter2.html">
+               <i class="fas fa-arrow-left"></i>
+               Go Back
+            </a>
+         </button>
+      </nav>
+      <!-- the <table></table> tag opens a table -->
+      <table border="1">
+         <!-- the <caption></caption> tag summerizes the tables  -->
+         <!-- contents (this helps visually impaired people) -->
+         <caption><strong>Table of Fruits (1st column) and their prices (2nd column)</strong></caption>
+
+         <!-- the <thead></thead> section appears first in the table and it formats the table header area -->
+         <thead>
+            <tr> <!-- the <tr> inserts a table row -->
+               <th>Fruit</th> <!--inserts a heading cell-->
+               <th>Price</th>
+            </tr>
+         </thead>
+
+         <!-- the <tfoot></tfoot> section appears last in the table and it formats the table footer area -->
+         <tfoot>
+            <tr>
+               <th>Total</th>
+               <th>$3.75</th>
+            </tr>
+         </tfoot>
+
+         <!-- all table content is enclosed within the <tbody></tbody> -->
+         <tbody>
+            <tr>
+               <td>Apple</td> <!--inserts a data cell-->
+               <td>$0.25</td>
+            </tr>
+            <tr>
+               <td>Orange</td> <!--inserts a data cell-->
+               <td>%0.50</td>
+            </tr>
+            <tr>
+               <td>Banana</td> <!--inserts a data cell-->
+               <td>$1.00</td>
+            </tr>
+            <tr>
+               <td>Pineapple</td> <!--inserts a data cell-->
+               <td>$2.00</td>
+            </tr>
+         </tbody>
+      </table><br>
+   </body>
+</html>
