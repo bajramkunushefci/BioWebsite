@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<!-- Fig. 5.10: imageborder.html -->
+<!-- Stretching and repeating an image to create a border. -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="shortcut icon" href="../assets/Images/BK.Logo.png" />
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <title>Image Border</title>
+        <style>
+            div {
+                border-width: 30px;
+                width: 234px;
+                padding: 20px 20px;
+            }
+            #stretch {
+                -webkit-border-image: url(Images/border.png) 80 80 80 80 stretch;
+                -moz-border-image: url(Images/border.png) 80 80 80 80 stretch;
+                -o-border-image: url(Images/border.png) 80 80 80 80 stretch;
+                border-image: url(Images/border.png) 80 80 80 80 stretch;
+            }
+            #repeat {
+                -webkit-border-image: url(Images/border.png) 34% 34% repeat;
+                -moz-border-image: url(Images/border.png) 34% 34% repeat;
+                -o-border-image: url(Images/border.png) 34% 34% repeat;
+                border-image: url(Images/border.png) 34% 34% repeat;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="examples-nav">
+            <button class="examples-button">
+               <a href="../chapter5.html">
+                  <i class="fas fa-arrow-left"></i>
+                  Go Back
+               </a>
+            </button>
+        </nav>
+        <h2>Image Borders</h2>
+        <img src="Images/border.png" alt="Image used to demonstrate borders">
+        <p>
+            <div id="stretch">Stretching the image border</div>
+        </p>
+        <p>
+            <div id="repeat">Reapeating the image border</div>
+        </p><br>
+    </body>
+</html>

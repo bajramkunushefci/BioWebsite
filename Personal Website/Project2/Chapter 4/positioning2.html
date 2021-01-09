@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<!-- Fig. 4.10: positioning2.html -->
+<!-- Relative positioning of elements. -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="shortcut icon" href="../assets/Images/BK.Logo.png" />
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <title>Relative Positioning</title>
+        <style type="text/css">
+            p {
+                font-size: 1.3em;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            span {
+                color: red;
+                height: 1em;
+            }
+            .super {
+                position: relative;
+                top: -1ex;
+            }
+            .sub {
+                position: relative;
+                bottom: -1ex;
+            }
+            .shiftleft {
+                position: relative;
+                left: -1ex;
+            }
+            .shiftright {
+                position: relative;
+                right: -1ex;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="examples-nav">
+            <button class="examples-button">
+               <a href="../chapter4.html">
+                  <i class="fas fa-arrow-left"></i>
+                  Go Back
+               </a>
+            </button>
+        </nav>
+        <p>The text at the end of this sentence <span class="super">is in superscript</span>.</p>
+        <p>The text at the end of this sentence <span class="sub">is in suberscript</span>.</p>
+        <p>The text at the end of this sentence <span class="shiftleft">is shifted left</span>.</p>
+        <p>The text at the end of this sentence <span class="shiftright">is shifted right</span>.</p><br>
+    </body>
+</html>

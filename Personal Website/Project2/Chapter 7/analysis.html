@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<!-- Fig. 7.11: analysis.html -->
+<!-- Examination-results calculation. -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="shortcut icon" href="../assets/Images/BK.Logo.png" />
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <title>Analysis of Examination Results</title>
+    </head>
+    <body>
+        <nav class="examples-nav">
+            <button class="examples-button">
+               <a href="../chapter7.html">
+                  <i class="fas fa-arrow-left"></i>
+                  Go Back
+               </a>
+            </button>
+        </nav>
+        <script>
+            // initializing variables in declarations
+            var passes = 0; // number of passes
+            var failures = 0; // number of failures
+            var student = 1; // student counter
+            var result; // an exam result
+
+            // process 10 students; counter-controlled loop
+            while ( student <= 10 )
+            {
+                result = window.prompt( "Enter result(1=pass, 2=fail)", "0" );
+
+                if ( result == "1" )
+                    passes = passes + 1;
+                else
+                    failures = failures + 1;
+
+                student = student + 1;
+            } // end while
+
+            // termination phase
+            document.writeln( "<h1>Examination Results</h1>" );
+            document.writeln( "<p>Passed: " + passes + "; Failed: " + failures + "</p>" );
+
+            if (passes > 8)
+                document.writeln( "<p>Bonus to instructor!</p>" );
+        </script>
+    </body>
+</html>

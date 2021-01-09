@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<!-- Fig. 5.12: transitions.html -->
+<!-- Transitons in CSS3. -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="shortcut icon" href="../assets/Images/BK.Logo.png" />
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <title>Transitons</title>
+        <style>
+            img {
+                margin: 80px;
+                -webkit-transition: -webkit-transform 4s;
+                -moz-transition: -moz-transform 4s;
+                -o-transition: -o-transform 4s;
+                transition: transform 4s;
+            }
+            img:hover {
+                -webkit-transform: rotate(360deg) scale(2, 2);
+                -moz-transform: rotate(360deg) scale(2, 2);
+                -o-transform: rotate(360deg) scale(2, 2);
+                transform: rotate(360deg) scale(2, 2);
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="examples-nav">
+            <button class="examples-button">
+               <a href="../chapter5.html">
+                  <i class="fas fa-arrow-left"></i>
+                  Go Back
+               </a>
+            </button>
+        </nav>
+        <img src="Images/c++.jpg" alt="C++ How to program book cover" width="100"><br>
+    </body>
+</html>

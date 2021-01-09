@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<!-- Fig. 6.7: addition.html -->
+<!-- Addition Script -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="shortcut icon" href="../assets/Images/BK.Logo.png" />
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <title> Addition Program</title>
+    </head>
+    <body>
+        <nav class="examples-nav">
+            <button class="examples-button">
+               <a href="../chapter6.html">
+                  <i class="fas fa-arrow-left"></i>
+                  Go Back
+               </a>
+            </button>
+        </nav>
+        <script type="text/javascript">
+            var firstNumber; // first string entered by user
+            var secondNumber; // second string entered by user
+            var thirdNumber; // third string entered by user
+            var number1; // first number to add
+            var number2; // second number to add
+            var number3; // third number to add
+            var sum; // sum of number1 and number2
+
+            // read in first number from user as a string
+            firstNumber = window.prompt("Enter first integer");
+
+            // read in second number from user as a string
+            secondNumber = window.prompt("Enter second integer");
+
+            // read in third number from user as a string
+            thirdNumber = window.prompt("Enter third integer");
+
+            //convert numbers from strings to integers
+            number1 = parseInt(firstNumber);
+            number2 = parseInt(secondNumber);
+            number3 = parseInt(thirdNumber);
+
+            sum = number1 + number2 + number3; // add the numbers
+
+            // display the results
+            document.writeln("<h1>The sum is " + sum + "</h1>");
+        </script>
+    </body>
+</html>

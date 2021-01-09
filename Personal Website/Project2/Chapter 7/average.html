@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<!-- Fig. 7.7: average.html -->
+<!-- Counter-controlled repetition to calculate a class average. -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="shortcut icon" href="../assets/Images/BK.Logo.png" />
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <title>Class Average Program</title>
+    </head>
+    <body>
+        <nav class="examples-nav">
+            <button class="examples-button">
+               <a href="../chapter7.html">
+                  <i class="fas fa-arrow-left"></i>
+                  Go Back
+               </a>
+            </button>
+        </nav>
+        <script>
+            var total; // sum of grades
+            var gradeCounter; // number of grades entered
+            var grade; // grade typed by user (as a string)
+            var gradeValue; // grade value (converted to integer)
+            var average; // average of all grades
+
+            // initialization phase
+            total = 0; //clear total
+            gradeCounter = 1; // prepare to loop
+
+            // processing phase
+            while ( gradeCounter <= 10 ) // loop 10 times
+            {
+                // prompt for input and read grade from user
+                grade = window.prompt( "Enter integer grade:" , "0" );
+
+                // convert grade from a string to an integer 
+                gradeValue = parseInt( grade );
+
+                // add gradeValue to total
+                total = total + gradeValue;
+
+                // add 1 to gradeCounter
+                gradeCounter = gradeCounter + 1;
+            } // end while
+
+            // termination phase
+            average = total / 10; // calculate the average
+
+            // display average of exam grades
+
+            document.writeln(
+                "<h1>Class average is " + average + "</h1>"
+            );
+        </script>
+    </body>
+</html>
