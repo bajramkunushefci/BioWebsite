@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<!-- Fig. 4.9: positioning.html -->
+<!-- Absolute positioning of elements. -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="/Images/personallogo.png" />
+        <title>Absolute Positioning</title>
+        <style type="text/css">
+            .background_image { position: absolute;
+                                top: 0px;
+                                left: 0px;
+                                z-index: 1; }
+            .foreground_image { position: absolute;
+                                top: 25px;
+                                left: 100px;
+                                z-index: 2; }                    
+            .text {
+                position: absolute;
+                top: 25px;
+                left: 100px;
+                z-index: 3;
+                font-size: 20pt;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }                               
+        </style>
+    </head>
+    <body>
+        <p>
+            <img src="Images/background_image.png" alt="First positioned image" class="background_image">
+        </p>
+        <p>
+            <img src="Images/foreground_image.png" alt="Second positioned image" class="foreground_image">
+        </p>
+        <p class="text">Positioned Text</p><br>
+        <div>
+            <button style="margin-top: 200px;"><a href="/chapter4.html">Go Back</a></button>
+        </div>
+    </body>
+</html>

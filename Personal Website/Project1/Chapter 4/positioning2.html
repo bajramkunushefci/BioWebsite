@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<!-- Fig. 4.10: positioning2.html -->
+<!-- Relative positioning of elements. -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="/Images/personallogo.png" />
+        <title>Relative Positioning</title>
+        <style type="text/css">
+            p {
+                font-size: 1.3em;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            span {
+                color: red;
+                height: 1em;
+            }
+            .super {
+                position: relative;
+                top: -1ex;
+            }
+            .sub {
+                position: relative;
+                bottom: -1ex;
+            }
+            .shiftleft {
+                position: relative;
+                left: -1ex;
+            }
+            .shiftright {
+                position: relative;
+                right: -1ex;
+            }
+        </style>
+    </head>
+    <body>
+        <p>The text at the end of this sentence <span class="super">is in superscript</span>.</p>
+        <p>The text at the end of this sentence <span class="sub">is in suberscript</span>.</p>
+        <p>The text at the end of this sentence <span class="shiftleft">is shifted left</span>.</p>
+        <p>The text at the end of this sentence <span class="shiftright">is shifted right</span>.</p><br>
+        <button><a href="/chapter4.html">Go Back</a></button>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<!-- Fig. 5.11: animation.html -->
+<!-- Animation in CSS3. -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="/Images/personallogo.png" />
+        <title>Animation</title>
+        <style>
+            img {
+                position: relative;
+                -webkit-animation: movingImage linear 10s 1s 2 alternate;
+                -moz-animation: movingImage linear 10s 1s 2 alternate;
+                animation: movingImage linear 10s 2 1s alternate;
+            }
+            @-webkit-keyframes movingImage {
+                0% {opacity: 0; left: 50px; top: 0px;}
+                25% {opacity: 1; left: 0px; top:5 0px;}
+                50% {opacity: 0; left: 50px; top: 100px;}
+                75% {opacity: 1; left: 100px; top: 50px;}
+                100% {opacity: 0; left: 50px; top: 0px;}
+            }
+            @-moz-keyframes movingImage {
+                0% {opacity: 0; left: 50px; top: 0px;}
+                25% {opacity: 1; left: 0px; top:5 0px;}
+                50% {opacity: 0; left: 50px; top: 100px;}
+                75% {opacity: 1; left: 100px; top: 50px;}
+                100% {opacity: 0; left: 50px; top: 0px;}
+            }
+            @keyframes movingImage {
+                0% {opacity: 0; left: 50px; top: 0px;}
+                25% {opacity: 1; left: 0px; top: 50px;}
+                50% {opacity: 0; left: 50px; top: 100px;}
+                75% {opacity: 1; left: 100px; top: 50px;}
+                100% {opacity: 0; left: 50px; top: 0px;}
+            }
+        </style>
+    </head>
+    <body>
+        <img src="Images/jhtp.png" alt="Java How to Program Book Cover" width="138" height="180">
+        <div></div><br>
+        <!-- <button><a href="/chapter5.html">Go Back</a></button> -->
+        <button onclick="goBack()">Go Back</button>
+    </body>
+</html>

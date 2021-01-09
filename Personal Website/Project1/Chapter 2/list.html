@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<!-- Fig. 2.11: list.html -->
+<!-- Nested lists and ordered lists. -->
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="shortcut icon" href="/Images/personallogo.png" />
+      <title>Lists</title>
+   </head>
+   <body>
+      <h1>The best features of the internet</h1>
+
+      <!-- Create an unordered list -->
+      <ul>
+         <li>You can meet people from counties around the world.</li>
+         <li>You have access to new media as it becomes public:
+
+            <!-- this starts a nested unordered list, which uses a different bullet. The list ends when you close the <ul></ul> tag. -->
+            <ul>
+               <li>New games</li>
+               <li>New applications
+
+                  <!-- nested ordered list -->
+                  <ol>
+                     <li>For business</li>
+                     <li>For pleasure</li>
+                  </ol>
+               </li> <!--ends line 22 new applications li-->
+
+               <li>Around the clock news</li>
+               <li>Search engines</li>
+               <li>Shopping</li>
+               <li>Programming
+
+                  <!-- another nested ordered list -->
+                  <ol>
+                     <li>XML</li>
+                     <li>Java</li>
+                     <li>HTML5</li>
+                     <li>JavaScript</li>
+                     <li>New languages</li>
+                  </ol>
+               </li> <!--ends programming li of line 34-->
+            </ul> <!--ends the nested list of the line 20-->
+         </li>
+
+         <li>Links</li>
+         <li>Keeping in touch with old friends</li>
+         <li>It's the technology of the future!</li>
+      </ul> <!--ends the unordered list of line 15-->
+      <button><a href="/chapter2.html">Go Back</a></button>
+   </body>
+</html>
