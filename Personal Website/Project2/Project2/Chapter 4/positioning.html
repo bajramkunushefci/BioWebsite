@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<!-- Fig. 4.9: positioning.html -->
+<!-- Absolute positioning of elements. -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="shortcut icon" href="../assets/Images/BK.Logo.png" />
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <title>Absolute Positioning</title>
+        <style type="text/css">
+            .background_image { position: absolute;
+                                top: 0px;
+                                left: 0px;
+                                z-index: 1;
+                                margin-top: 100px; }
+            .foreground_image { position: absolute;
+                                top: 25px;
+                                left: 100px;
+                                z-index: 2;
+                                margin-top: 100px; }                    
+            .text {
+                position: absolute;
+                top: 25px;
+                left: 100px;
+                z-index: 3;
+                font-size: 20pt;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                margin-top: 100px;
+            }                               
+        </style>
+    </head>
+    <body>
+        <nav class="examples-nav">
+            <button class="examples-button">
+               <a href="../chapter4.html">
+                  <i class="fas fa-arrow-left"></i>
+                  Go Back
+               </a>
+            </button>
+        </nav>
+        <p>
+            <img src="Images/background_image.png" alt="First positioned image" class="background_image">
+        </p>
+        <p>
+            <img src="Images/foreground_image.png" alt="Second positioned image" class="foreground_image">
+        </p>
+        <p class="text">Positioned Text</p><br>
+    </body>
+</html>

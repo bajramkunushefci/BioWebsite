@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<!-- Fig. 5.3: boxshadow.html -->
+<!-- Creating box-shadow effects. -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="shortcut icon" href="../assets/Images/BK.Logo.png" />
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>Box Shadow</title>
+    <style>
+        .combined div {
+            width: 200px;
+            height: 200px;
+            background-color: plum;
+            box-shadow: 25px 25px 50px dimgray;
+            float: left;
+            margin-right: 120px;
+            margin-top: 40px;
+        }
+        .combined #box2 {
+            width: 200px;
+            height: 200px;
+            background-color: plum;
+            box-shadow: -25px -25px 50px dimgray;
+        }
+        .combined div h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav class="examples-nav">
+        <button class="examples-button">
+           <a href="../chapter5.html">
+              <i class="fas fa-arrow-left"></i>
+              Go Back
+           </a>
+        </button>
+    </nav>
+    <div class="combined">
+        <div>
+            <h2>Box Shadow Bottom and Right</h2>
+        </div>
+        <div id="box2"><h2>Box Shadow Top and Left</h2></div><br>
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<!-- Fig. 4.11: backgroung.html -->
+<!-- Adding background images ind indentation -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="shortcut icon" href="../assets/Images/BK.Logo.png" />
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <title>Background Images</title>
+        <style>
+            body {
+                background-image: url(Images/deitel.png);
+                background-position: bottom right;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            }
+            p {
+                font-size: 18pt;
+                color: darkblue;
+                text-indent: 1em;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .dark {
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="examples-nav">
+            <button class="examples-button">
+               <a href="../chapter4.html">
+                  <i class="fas fa-arrow-left"></i>
+                  Go Back
+               </a>
+            </button>
+        </nav>
+        <p>This example uses the background-image, background-position and background-attachment styles to place the <span class="dark">Deitel & Associates, Inc.</span> logo in the bottom-right corner of the page. Notice how the logo stays in the proper position when you resize the browser window. The background-color fills in where there is no image.</p><br>
+    </body>
+</html>

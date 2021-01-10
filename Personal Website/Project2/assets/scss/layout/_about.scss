@@ -9,8 +9,10 @@ body {
             font-weight: 600;
             .personal-logo {
                 width: 100%;
+                height: 100%;
                 img {
-                    width: 24%;
+                    max-width: 100%;
+                    height: 100%;
                     cursor: pointer;
                 }
             }
@@ -24,9 +26,12 @@ body {
                         text-decoration: none;
                         color: #f5f4f4;
                         &:hover {
-                            color: #f5f4f4;
+                            color: #014242;
                             transition: .5s;
                         }
+                    }
+                    .active {
+                        color: #014242;
                     }
                 }
             }
@@ -93,10 +98,10 @@ body {
             }
         }  
     }
-    footer {
+    .about-footer {
         width: 100%;
         height: 22vh;
-        background-color: rgb(70, 130, 130) !important;
+        background-color: rgb(70, 130, 130);
         flex-shrink: 0;
         .contacts {
             width: 100%;
@@ -112,17 +117,13 @@ body {
                 a {
                     text-decoration: none;
                     margin-left: 7px;
-                    &:first-child {
-                        color: rgb(1, 1, 105);
-                    }
-                    &:nth-child(2) {
-                        color: #471b61;
-                    }
-                    &:last-child {
-                        color: rgb(233, 0, 0);
-                    }
                     i {
                         font-size: 22px;
+                        color: black;
+                        &:hover {
+                            color: #f5f4f4;
+                            transition: .5s;
+                        }
                     }
                 }
             }

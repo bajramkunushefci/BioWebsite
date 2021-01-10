@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<!-- Fig. 5.9: reflection.html -->
+<!-- Reflections in CSS3. -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="/Images/personallogo.png" />
+        <title>Reflection</title>
+        <style>
+            img {
+                margin: 10px;
+            }
+            img.below {
+                -webkit-box-reflect: below 5px -webkit-gradient(linear, left top, left bottom, from(transparent), to(white));
+            }
+            img.right {
+                -webkit-box-reflect: right 5px -webkit-gradient(linear, right top, left top, from(transparent), to(white));
+            }
+        </style>
+    </head>
+    <body>
+        <img src="Images/jhtp.png" alt="Java How to Program Book Cover" class="below" width="138" height="180">
+        <img src="Images/jhtp.png" alt="Java How to Program Book Cover" class="right" width="138" height="180"><br>
+        <button><a href="/chapter5.html">Go Back</a></button>
+    </body>
+</html>

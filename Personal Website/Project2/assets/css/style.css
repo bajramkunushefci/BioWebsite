@@ -19,6 +19,7 @@ body .main-nav nav .personal-logo {
 body .main-nav nav .personal-logo img {
   max-width: 100%;
   height: 100%;
+  cursor: pointer;
 }
 body .main-nav nav ul {
   width: 100%;
@@ -31,20 +32,23 @@ body .main-nav nav ul li a {
   color: #f5f4f4;
 }
 body .main-nav nav ul li a:hover {
-  color: black;
+  color: #014242;
   transition: 0.5s;
 }
-body .testing {
+body .main-nav nav ul li .active {
+  color: #014242;
+}
+body .sections-together {
   width: 100%;
 }
-body .testing .section-1 {
+body .sections-together .section-1 {
   background-size: cover;
   background-position: center;
   width: 100%;
   height: 81vh;
   opacity: 0.8;
 }
-body .testing .section-1 .site-heading {
+body .sections-together .section-1 .site-heading {
   width: 100%;
   position: relative;
   right: 10px;
@@ -52,103 +56,108 @@ body .testing .section-1 .site-heading {
   color: black;
   text-align: center;
 }
-body .testing .section-1 .site-heading h1 {
+body .sections-together .section-1 .site-heading h1 {
   font-weight: 600;
 }
-body .testing .section-1 .site-heading h1 span {
+body .sections-together .section-1 .site-heading h1 span {
   color: #3c7878;
   font-weight: 700;
 }
-body .testing .section-2 {
+body .sections-together .section-1 .site-heading strong {
+  color: black;
+}
+body .sections-together .section-2 {
   width: 100%;
   background-color: #f3f3f3;
   padding-top: 30px;
   padding-bottom: 30px;
 }
-body .testing .section-2 .info {
+body .sections-together .section-2 .info {
   width: 100%;
 }
-body .testing .section-2 .info .section-header {
+body .sections-together .section-2 .info .section-header {
   text-align: center;
+  transition-duration: 0.8s;
 }
-body .testing .section-2 .info .section-header h3 {
+body .sections-together .section-2 .info .section-header h3 {
   font-weight: 600;
 }
-body .testing .section-2 .info .section-header h3 span {
+body .sections-together .section-2 .info .section-header h3 span {
   color: #3c7878;
 }
-body .testing .section-2 .info .section-paragraph {
+body .sections-together .section-2 .info .section-paragraph {
   text-align: center;
   margin-top: 20px;
+  transition-duration: 0.8s;
 }
-body .testing .section-2 .info .section-paragraph p {
+body .sections-together .section-2 .info .section-paragraph p {
   font-weight: 600;
   color: #212529;
 }
-body .testing .section-2 .info .information {
+body .sections-together .section-2 .info .information {
   text-align: center;
   margin-top: 20px;
+  transition-duration: 0.8s;
 }
-body .testing .section-2 .info .information p {
+body .sections-together .section-2 .info .information p {
   font-weight: 600;
   color: #212529;
   margin-bottom: 25px;
 }
-body .testing .section-2 .info .information ul {
+body .sections-together .section-2 .info .information ul {
   display: flex;
   justify-content: space-around;
   list-style: none;
   margin: 0;
   padding: 0;
 }
-body .testing .section-2 .info .information ul li {
+body .sections-together .section-2 .info .information ul li {
   width: 100%;
 }
-body .testing .section-2 .info .information ul li:first-child {
+body .sections-together .section-2 .info .information ul li:first-child {
   color: orange;
 }
-body .testing .section-2 .info .information ul li:nth-child(2) {
+body .sections-together .section-2 .info .information ul li:nth-child(2) {
   color: #1919e4;
 }
-body .testing .section-2 .info .information ul li:last-child {
+body .sections-together .section-2 .info .information ul li:last-child {
   color: #f1f10c;
 }
-body .testing .section-2 .info .information ul li i {
+body .sections-together .section-2 .info .information ul li i {
   width: 100%;
   font-size: 105px;
 }
-body footer {
+body .main-footer {
   width: 100%;
   height: 22vh;
-  background-color: #468282 !important;
+  background-color: #468282;
+  flex-shrink: 0;
 }
-body footer .contacts {
+body .main-footer .contacts {
   width: 100%;
   display: flex;
   justify-content: space-around;
   padding-top: 40px;
 }
-body footer .contacts p {
+body .main-footer .contacts p {
   font-size: 17px;
   font-weight: bold;
+  color: #f5f4f4;
 }
-body footer .contacts .links a {
+body .main-footer .contacts .links a {
   text-decoration: none;
   margin-left: 7px;
 }
-body footer .contacts .links a:first-child {
-  color: #010169;
-}
-body footer .contacts .links a:nth-child(2) {
-  color: #471b61;
-}
-body footer .contacts .links a:last-child {
-  color: #e90000;
-}
-body footer .contacts .links a i {
+body .main-footer .contacts .links a i {
   font-size: 22px;
+  color: black;
 }
-body footer .date {
+body .main-footer .contacts .links a i:hover {
+  color: #f5f4f4;
+  transition: 0.5s;
+}
+body .main-footer .date {
+  color: #f5f4f4;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -176,9 +185,12 @@ html body .assignments-nav nav {
 }
 html body .assignments-nav nav .personal-logo {
   width: 100%;
+  height: 100%;
 }
 html body .assignments-nav nav .personal-logo img {
-  width: 24%;
+  max-width: 100%;
+  height: 100%;
+  cursor: pointer;
 }
 html body .assignments-nav nav ul {
   width: 100%;
@@ -191,8 +203,11 @@ html body .assignments-nav nav ul li a {
   color: #f5f4f4;
 }
 html body .assignments-nav nav ul li a:hover {
-  color: black;
+  color: #014242;
   transition: 0.5s;
+}
+html body .assignments-nav nav ul li .active {
+  color: #014242;
 }
 html body .assignments-section {
   flex: 1 0 auto;
@@ -207,67 +222,108 @@ html body .assignments-section p {
   text-align: center;
   margin-bottom: 30px;
 }
-html body .assignments-section ul {
+html body .assignments-section .homework-projects {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+html body .assignments-section .homework-projects .homework {
+  height: auto;
+  margin-right: 25px;
+}
+html body .assignments-section .homework-projects .homework ul {
   list-style: none;
   width: 8em;
   padding-left: 24px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 8px;
+  padding-bottom: 3px;
   background-color: #396d6d;
   color: white;
-  margin-left: 50px;
   cursor: pointer;
   font-weight: 600;
-  border: 1px solid royalblue;
+  border: 1px solid #396d6d;
 }
-html body .assignments-section ul:hover a {
+html body .assignments-section .homework-projects .homework ul:hover a {
   display: block;
   padding-left: 5px;
 }
-html body .assignments-section ul li {
+html body .assignments-section .homework-projects .homework ul h6 {
+  font-weight: 600;
+}
+html body .assignments-section .homework-projects .homework ul li {
   width: 100%;
 }
-html body .assignments-section ul li a {
+html body .assignments-section .homework-projects .homework ul li a {
   text-decoration: none;
   color: white;
   padding-top: 5px;
   display: none;
   font-weight: normal;
 }
-html body footer {
+html body .assignments-section .homework-projects .projects {
+  height: auto;
+  margin-left: 25px;
+}
+html body .assignments-section .homework-projects .projects ul {
+  list-style: none;
+  width: 8em;
+  padding-left: 28px;
+  padding-top: 8px;
+  padding-bottom: 3px;
+  background-color: #396d6d;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  border: 1px solid #396d6d;
+}
+html body .assignments-section .homework-projects .projects ul:hover a {
+  display: block;
+  padding-left: 5px;
+}
+html body .assignments-section .homework-projects .projects ul h6 {
+  font-weight: 600;
+  padding-left: 6px;
+}
+html body .assignments-section .homework-projects .projects ul li {
+  width: 100%;
+}
+html body .assignments-section .homework-projects .projects ul li a {
+  text-decoration: none;
+  color: white;
+  padding-top: 5px;
+  display: none;
+  font-weight: normal;
+}
+html body .assignments-footer {
   width: 100%;
   height: 22vh;
-  background-color: #468282 !important;
+  background-color: #468282;
   flex-shrink: 0;
 }
-html body footer .contacts {
+html body .assignments-footer .contacts {
   width: 100%;
   display: flex;
   justify-content: space-around;
   padding-top: 40px;
 }
-html body footer .contacts p {
+html body .assignments-footer .contacts p {
   font-size: 17px;
   font-weight: bold;
   color: #f5f4f4;
 }
-html body footer .contacts .links a {
+html body .assignments-footer .contacts .links a {
   text-decoration: none;
   margin-left: 7px;
 }
-html body footer .contacts .links a:first-child {
-  color: #010169;
-}
-html body footer .contacts .links a:nth-child(2) {
-  color: #471b61;
-}
-html body footer .contacts .links a:last-child {
-  color: #e90000;
-}
-html body footer .contacts .links a i {
+html body .assignments-footer .contacts .links a i {
   font-size: 22px;
+  color: black;
 }
-html body footer .date {
+html body .assignments-footer .contacts .links a i:hover {
+  color: #f5f4f4;
+  transition: 0.5s;
+}
+html body .assignments-footer .date {
   color: #f5f4f4;
   margin: 0;
   padding: 0;
@@ -288,9 +344,11 @@ body .about-nav nav {
 }
 body .about-nav nav .personal-logo {
   width: 100%;
+  height: 100%;
 }
 body .about-nav nav .personal-logo img {
-  width: 24%;
+  max-width: 100%;
+  height: 100%;
   cursor: pointer;
 }
 body .about-nav nav ul {
@@ -304,8 +362,11 @@ body .about-nav nav ul li a {
   color: #f5f4f4;
 }
 body .about-nav nav ul li a:hover {
-  color: #f5f4f4;
+  color: #014242;
   transition: 0.5s;
+}
+body .about-nav nav ul li .active {
+  color: #014242;
 }
 body .site-section {
   width: 100%;
@@ -365,40 +426,36 @@ body .more-about table tr td {
   padding: 5px 30px;
   background-color: #6fbba2;
 }
-body footer {
+body .about-footer {
   width: 100%;
   height: 22vh;
-  background-color: #468282 !important;
+  background-color: #468282;
   flex-shrink: 0;
 }
-body footer .contacts {
+body .about-footer .contacts {
   width: 100%;
   display: flex;
   justify-content: space-around;
   padding-top: 40px;
 }
-body footer .contacts p {
+body .about-footer .contacts p {
   font-size: 17px;
   font-weight: bold;
   color: #f5f4f4;
 }
-body footer .contacts .links a {
+body .about-footer .contacts .links a {
   text-decoration: none;
   margin-left: 7px;
 }
-body footer .contacts .links a:first-child {
-  color: #010169;
-}
-body footer .contacts .links a:nth-child(2) {
-  color: #471b61;
-}
-body footer .contacts .links a:last-child {
-  color: #e90000;
-}
-body footer .contacts .links a i {
+body .about-footer .contacts .links a i {
   font-size: 22px;
+  color: black;
 }
-body footer .date {
+body .about-footer .contacts .links a i:hover {
+  color: #f5f4f4;
+  transition: 0.5s;
+}
+body .about-footer .date {
   color: #f5f4f4;
   margin: 0;
   padding: 0;
@@ -419,9 +476,12 @@ body footer .date {
 }
 .contact-nav nav .personal-logo {
   width: 100%;
+  height: 100%;
 }
 .contact-nav nav .personal-logo img {
-  width: 24%;
+  max-width: 100%;
+  height: 100%;
+  cursor: pointer;
 }
 .contact-nav nav ul {
   width: 100%;
@@ -431,11 +491,14 @@ body footer .date {
 }
 .contact-nav nav ul li a {
   text-decoration: none;
-  color: #f5f5f5;
+  color: #f5f4f4;
 }
 .contact-nav nav ul li a:hover {
-  color: black;
+  color: #014242;
   transition: 0.5s;
+}
+.contact-nav nav ul li .active {
+  color: #014242;
 }
 
 .contact-section {
@@ -506,40 +569,36 @@ body footer .date {
   margin-top: 10px;
 }
 
-footer {
+.contact-footer {
   width: 100%;
   height: 22vh;
-  background-color: #468282 !important;
+  background-color: #468282;
   flex-shrink: 0;
 }
-footer .contacts {
+.contact-footer .contacts {
   width: 100%;
   display: flex;
   justify-content: space-around;
   padding-top: 40px;
 }
-footer .contacts p {
+.contact-footer .contacts p {
   font-size: 17px;
   font-weight: bold;
   color: #f5f4f4;
 }
-footer .contacts .links a {
+.contact-footer .contacts .links a {
   text-decoration: none;
   margin-left: 7px;
 }
-footer .contacts .links a:first-child {
-  color: #010169;
-}
-footer .contacts .links a:nth-child(2) {
-  color: #471b61;
-}
-footer .contacts .links a:last-child {
-  color: #e90000;
-}
-footer .contacts .links a i {
+.contact-footer .contacts .links a i {
   font-size: 22px;
+  color: black;
 }
-footer .date {
+.contact-footer .contacts .links a i:hover {
+  color: #f5f4f4;
+  transition: 0.5s;
+}
+.contact-footer .date {
   color: #f5f4f4;
   margin: 0;
   padding: 0;
@@ -604,4 +663,111 @@ footer .date {
   text-decoration: none;
   color: black;
   font-weight: 700;
+}
+
+.hobbies-nav {
+  width: 100%;
+}
+.hobbies-nav nav {
+  display: flex;
+  align-items: center;
+  background-color: #468282;
+  height: 19vh;
+  font-weight: 600;
+}
+.hobbies-nav nav .personal-logo {
+  width: 100%;
+  height: 100%;
+}
+.hobbies-nav nav .personal-logo img {
+  max-width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.hobbies-nav nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+.hobbies-nav nav ul li a {
+  text-decoration: none;
+  color: #f5f4f4;
+}
+.hobbies-nav nav ul li a:hover {
+  color: #014242;
+  transition: 0.5s;
+}
+.hobbies-nav nav ul li .active {
+  color: #014242;
+}
+
+.section-footer {
+  width: 100%;
+}
+.section-footer .movies-tvseries {
+  width: 100%;
+  background-color: #f3f3f3;
+}
+.section-footer .movies-tvseries .movies-heading {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 35px;
+}
+.section-footer .movies-tvseries .movies-heading h3 {
+  text-align: center;
+  color: darkslategray;
+}
+.section-footer .movies-tvseries .section-combined {
+  width: 100%;
+  display: flex;
+}
+.section-footer .movies-tvseries .section-combined .image {
+  width: 40%;
+  margin-left: 7%;
+}
+.section-footer .movies-tvseries .section-combined .image img {
+  width: 100%;
+}
+.section-footer .movies-tvseries .section-combined .movies-description {
+  width: 46%;
+  margin-right: 7%;
+  margin-left: 55px;
+}
+.section-footer .hobby-footer {
+  width: 100%;
+  height: 22vh;
+  background-color: #468282;
+  flex-shrink: 0;
+}
+.section-footer .hobby-footer .contacts {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 40px;
+}
+.section-footer .hobby-footer .contacts p {
+  font-size: 17px;
+  font-weight: bold;
+  color: #f5f4f4;
+}
+.section-footer .hobby-footer .contacts .links a {
+  text-decoration: none;
+  margin-left: 7px;
+}
+.section-footer .hobby-footer .contacts .links a i {
+  font-size: 22px;
+  color: black;
+}
+.section-footer .hobby-footer .contacts .links a i:hover {
+  color: #f5f4f4;
+  transition: 0.5s;
+}
+.section-footer .hobby-footer .date {
+  color: #f5f4f4;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  padding-top: 12px;
+  font-weight: bold;
 }

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<!-- Fig. 5.16: fblm.html  -->
+<!-- Flexible Box Layout Module. -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="shortcut icon" href="../assets/Images/BK.Logo.png" />
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <title>Flexible Box Layout Module</title>
+        <link href="https://fonts.googleapis.com/css2?family=Rosario:wght@300&display=swap" rel="stylesheet">
+        <style>
+            .flexbox {
+                width: 600px;
+                height: 420px;
+                display: -webkit-box;
+                display: box;
+                -webkit-box-orient: horizontal;
+                box-orient: horizontal;
+            }
+            .flexbox > div {
+                -webkit-transition: 1s ease-out;
+                transition: 1s ease-out;
+                -webkit-border-radius: 10px;
+                border-radius: 10px;
+                border: 2px solid black;
+                width: 120px;
+                margin: 10px -10px 10px 0px;
+                padding: 20px;
+                box-shadow: 10px 10px 10px dimgrey;
+            }
+            .flexbox > div:nth-child(1) {background-color: lightgrey;}
+            .flexbox > div:nth-child(2) {background-color: lightgrey;}
+            .flexbox > div:nth-child(3) {background-color: lightgrey;}
+            .flexbox > div:nth-child(4) {background-color: lightgrey;}
+
+            .flexbox > div:hover {
+                width: 200px;
+                color: white;
+                font-weight: bold;
+            }
+            .flexbox > div:nth-child(1):hover {background-color: royalblue;}
+            .flexbox > div:nth-child(2):hover {background-color: crimson;}
+            .flexbox > div:nth-child(3):hover {background-color: crimson;}
+            .flexbox > div:nth-child(4):hover {background-color: darkgreen;}
+            
+            p {
+                height: 250px;
+                overflow: hidden;
+                font-family: 'Rosario', sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="examples-nav">
+            <button class="examples-button">
+               <a href="../chapter5.html">
+                  <i class="fas fa-arrow-left"></i>
+                  Go Back
+               </a>
+            </button>
+        </nav>
+        <div class="flexbox">
+            <div>
+                <img src="Images/GPP.png" alt="Good programming practice icon">
+                <p>Good Programming Practices call attention to techniques that will help you produce programs that are clearer, more understandable and more maintainable.</p>
+            </div>
+            <div>
+                <img src="Images/EPT.png" alt="Error prevention tip icon">
+                <p>Error-Prevention Tips contain suggestions for exposing bugs and removing them from your programs; many describe aspects of programming that prevent bugs from getting into programs in the first place.</p>
+            </div>
+            <div>
+                <img src="Images/CPE.png" alt="Common Programming error icon">
+                <p>Common Programming Errors point out the error that students tend to make frequently. These Common Programming Errors reduce the likelihood that you'll make the same mistakes.</p>
+            </div>
+            <div>
+                <img src="Images/SEO.png" alt="Software Engineering Observation icon">
+                <p>Software Engineering Observations highlight architectural and design issues that affect the constraction of software and systems, especially large-scale systems.</p>
+            </div>
+        </div>
+    </body>
+</html>
