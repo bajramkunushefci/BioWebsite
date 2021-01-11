@@ -27,6 +27,14 @@ body .main-nav nav ul {
   display: flex;
   justify-content: space-around;
 }
+@media screen and (max-width: 780px) {
+  body .main-nav nav ul li {
+    padding-left: 10px;
+  }
+  body .main-nav nav ul li:first-child {
+    padding-left: 0;
+  }
+}
 body .main-nav nav ul li a {
   text-decoration: none;
   color: #f5f4f4;
@@ -198,6 +206,14 @@ html body .assignments-nav nav ul {
   display: flex;
   justify-content: space-around;
 }
+@media screen and (max-width: 780px) {
+  html body .assignments-nav nav ul li {
+    padding-left: 10px;
+  }
+  html body .assignments-nav nav ul li:first-child {
+    padding-left: 0;
+  }
+}
 html body .assignments-nav nav ul li a {
   text-decoration: none;
   color: #f5f4f4;
@@ -357,6 +373,14 @@ body .about-nav nav ul {
   display: flex;
   justify-content: space-around;
 }
+@media screen and (max-width: 780px) {
+  body .about-nav nav ul li {
+    padding-left: 10px;
+  }
+  body .about-nav nav ul li:first-child {
+    padding-left: 0;
+  }
+}
 body .about-nav nav ul li a {
   text-decoration: none;
   color: #f5f4f4;
@@ -373,36 +397,38 @@ body .site-section {
   display: flex;
   background-color: #f3f3f3;
 }
-body .site-section .sidebar {
-  float: right;
-  width: 30%;
-  height: 100%;
-  border: 1px solid white;
-  margin-left: auto;
-  margin-right: auto;
-  order: 2;
-}
-body .site-section .sidebar a {
-  width: 100%;
-}
-@media screen and (max-width: 600px) {
-  body .site-section .sidebar {
-    display: none;
+@media screen and (max-width: 780px) {
+  body .site-section {
+    display: flex;
+    flex-direction: column;
   }
 }
 body .site-section .my-image {
-  width: 40%;
-  order: 1;
+  width: 50%;
+  margin-left: 7%;
+}
+@media screen and (max-width: 780px) {
+  body .site-section .my-image {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 body .site-section .my-image img {
   width: 100%;
 }
 body .site-section .personal-information {
-  width: 26%;
-  margin-right: 1.5%;
-  margin-left: 2.5%;
+  width: 39%;
+  margin-right: 4%;
+  margin-left: 55px;
   margin-top: 50px;
-  order: 1;
+}
+@media screen and (max-width: 780px) {
+  body .site-section .personal-information {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 body .site-section .personal-information h3 {
   font-weight: 600;
@@ -412,42 +438,66 @@ body .site-section .personal-information h3 {
 body .more-about {
   width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 30px;
+  justify-content: space-around;
+  margin-top: 55px;
   margin-bottom: 30px;
 }
-body .more-about h3 {
+body .more-about .extra-information {
+  margin-right: 30px;
+}
+@media screen and (max-width: 660px) {
+  body .more-about .extra-information {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+body .more-about .extra-information h3 {
   font-weight: 600;
   margin-bottom: 40px;
+  text-align: center;
 }
-body .more-about h3 span {
+body .more-about .extra-information h3 span {
   color: #3c7878;
 }
-body .more-about table {
+body .more-about .extra-information table {
   text-align: center;
   border: none;
 }
-body .more-about table tr {
+body .more-about .extra-information table tr {
   width: 100%;
 }
-body .more-about table tr th {
+body .more-about .extra-information table tr th {
   border: none;
   border-color: darkslategray;
   padding: 10px;
   background-color: darkslategray;
   color: #f5f4f4;
 }
-body .more-about table tr td {
+body .more-about .extra-information table tr td {
   border: none;
   border-color: darkslategray;
   padding: 5px 30px;
   background-color: #6fbba2;
 }
+body .more-about .sidebar a {
+  width: 100%;
+}
+body .more-about .sidebar a img {
+  width: 100%;
+}
+@media screen and (max-width: 660px) {
+  body .more-about .sidebar {
+    display: none;
+  }
+}
 body .sidebar-bottom {
   display: none;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 660px) {
   body .sidebar-bottom {
     display: block;
     position: relative;
@@ -456,8 +506,6 @@ body .sidebar-bottom {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
-    border: 1px solid white;
-    background: white;
   }
 }
 body .about-footer {
@@ -522,6 +570,14 @@ body .about-footer .date {
   list-style: none;
   display: flex;
   justify-content: space-around;
+}
+@media screen and (max-width: 780px) {
+  .contact-nav nav ul li {
+    padding-left: 10px;
+  }
+  .contact-nav nav ul li:first-child {
+    padding-left: 0;
+  }
 }
 .contact-nav nav ul li a {
   text-decoration: none;
@@ -723,6 +779,14 @@ body .about-footer .date {
   list-style: none;
   display: flex;
   justify-content: space-around;
+}
+@media screen and (max-width: 780px) {
+  .hobbies-nav nav ul li {
+    padding-left: 10px;
+  }
+  .hobbies-nav nav ul li:first-child {
+    padding-left: 0;
+  }
 }
 .hobbies-nav nav ul li a {
   text-decoration: none;

@@ -30,6 +30,12 @@ html {
                     display: flex;
                     justify-content: space-around;
                     li {
+                        @media screen and (max-width: 780px) {
+                            padding-left: 10px;
+                            &:first-child {
+                                padding-left: 0;
+                            }
+                        }
                         a {
                             text-decoration: none;
                             color: #f5f4f4;
