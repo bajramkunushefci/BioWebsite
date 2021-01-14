@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<!-- Fig. 9.5: RollDice.html  -->
+<!-- Random Dice image generation using Math.random. -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="shortcut icon" href="../assets/Images/BK.Logo.png" />
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <title>Random Dice Images</title>
+        <style>
+            li {
+                display: inline;
+                margin-right: 10px;
+            }
+            ul {
+                margin: 0;
+            }
+            img {
+                width: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="examples-nav">
+            <button class="examples-button">
+               <a href="../chapter9.html">
+                  <i class="fas fa-arrow-left"></i>
+                  Go Back
+               </a>
+            </button>
+        </nav>
+
+        <form action="#">
+            <input type="button" value="Roll Dice" id="rollButton">
+        </form>
+        <ol>
+            <li>
+                <img id="die1" src="Images/die1.png" alt="die 1 image">
+            </li>
+            <li>
+                <img id="die2" src="Images/die2.png" alt="die 2 image">
+            </li>
+            <li>
+                <img id="die3" src="Images/die3.png" alt="die 3 image">
+            </li>
+            <li>
+                <img id="die4" src="Images/die4.png" alt="die 4 image">
+            </li>
+        </ol>
+
+        <script>
+            // variables used to interact with the img elements
+            var die1Image;
+            var die2Image;
+            var die3Image;
+            var die4Image;
+
+            function start() {
+                var button = document.getElementById("rollButton");
+                button.addEventListener("click", rollDice, false);
+                die1Image = document.getElementById("die1");
+                die2Image = document.getElementById("die2");
+                die3Image = document.getElementById("die3");
+                die4Image = document.getElementById("die4");
+            }
+
+            function rollDice() {
+                setImage( die1Image );
+                setImage( die2Image );
+                setImage( die3Image );
+                setImage( die4Image );
+            }
+
+            function setImage( dieImg ) {
+                var dieValue = Math.floor( 1 + Math.random() * 6 );
+                dieImg.setAttribute( "src", "die" + dieValue + ".png" );
+                dieImg.setAttribute( "alt", "die image with " + dieValue + " spot(s)" );
+            }
+
+            window.addEventListener("load", start, false);
+        </script>
+    </body>
+</html>
