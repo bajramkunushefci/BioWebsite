@@ -1,191 +1,243 @@
 body {
-    background-color: #f3f3f3;
-    .about-nav {
-        nav {
-            display: flex;
-            align-items: center;
-            background-color: rgb(70, 130, 130) !important;
-            height: 19vh;
-            font-weight: 600;
-            .personal-logo {
-                width: 100%;
-                height: 100%;
-                img {
-                    max-width: 100%;
-                    height: 100%;
-                    cursor: pointer;
-                }
-            }
-            ul {
-                width: 100%;
-                list-style: none;
-                display: flex;
-                justify-content: space-around;
-                li {
-                    @media screen and (max-width: 780px) {
-                        padding-left: 10px;
-                        &:first-child {
-                            padding-left: 0;
-                        }
-                    }
-                    a {
-                        text-decoration: none;
-                        color: #f5f4f4;
-                        &:hover {
-                            color: #014242;
-                            transition: .5s;
-                        }
-                    }
-                    .active {
-                        color: #014242;
-                    }
-                }
-            }
-        }
-    }
-    .site-section {
+  background-color: #f3f3f3;
+  .about-nav {
+    .about-navbar {
+      display: flex;
+      align-items: center;
+      background-color: rgb(70, 130, 130) !important;
+      height: 19vh;
+      font-weight: 600;
+      .personal-logo {
         width: 100%;
-        display: flex;
-        background-color: #f3f3f3;
-        @media screen and (max-width: 780px) {
-            display: flex;
-            flex-direction: column;
+        height: 100%;
+        img {
+          max-width: 100%;
+          height: 100%;
+          cursor: pointer;
         }
-        .my-image {
-            width: 50%;
-            margin-left: 7%;
-            @media screen and (max-width: 780px) {
-                width: 90%;
-                margin-left: auto;
-                margin-right: auto;
-            }
-            img {
-                width: 100%;
-            }
-        }
-        .personal-information {
-            width: 39%;
-            margin-right: 4%;
-            margin-left: 55px;
-            margin-top: 50px;
-            @media screen and (max-width: 780px) {
-                width: 90%;
-                margin-left: auto;
-                margin-right: auto;
-            }
-            h3 {
-                font-weight: 600;
-                color: rgb(60, 120, 120);
-                margin-bottom: 20px;
-            }
-        }
-    }
-    .more-about {
+      }
+      .nav-links {
         width: 100%;
+        list-style: none;
         display: flex;
         justify-content: space-around;
-        margin-top: 55px;
-        margin-bottom: 30px;
-        .extra-information {
-            margin-right: 30px;
-            @media screen and (max-width: 660px) {
-                width: 100%;
-                margin-left: auto;
-                margin-right: auto;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-            h3 {
-                font-weight: 600;
-                margin-bottom: 40px;
-                text-align: center;
-                span {
-                    color: rgb(60, 120, 120);
-                }
-            }
-            table {
-                text-align: center;
-                border: none;
-                tr {
-                    width: 100%;
-                    th {
-                        border: none;
-                        border-color: darkslategray;
-                        padding: 10px;
-                        background-color: darkslategray;
-                        color: #f5f4f4;
-                    }
-                    td {
-                        border: none;
-                        border-color: darkslategray;
-                        padding: 5px 30px;
-                        background-color: #6fbba2;
-                    }
-                }
-            }  
-        }
-        .sidebar {
-            a {
-                width: 100%;
-                img {
-                    width: 100%;
-                }
-            }
-            @media screen and (max-width: 660px) {
-                display: none;
-            }
-        }
-    }
-    .sidebar-bottom {
-        display: none;
-        @media screen and (max-width: 660px) {
-            display: block;
-            position: relative;
-            width: 90%;
-            height: auto;
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: 20px;
-        }
-    }
-    .about-footer {
-        width: 100%;
-        height: 22vh;
-        background-color: rgb(70, 130, 130);
-        flex-shrink: 0;
-        .contacts {
-            width: 100%;
-            display: flex;
-            justify-content: space-around;
-            padding-top: 40px;
-            p {
-                font-size: 17px;
-                font-weight: bold;
-                color: #f5f4f4;
-            }
-            .links {
-                a {
-                    text-decoration: none;
-                    margin-left: 7px;
-                    i {
-                        font-size: 22px;
-                        color: black;
-                        &:hover {
-                            color: #f5f4f4;
-                            transition: .5s;
-                        }
-                    }
-                }
-            }
-        }
-        .date {
+        li {
+          a {
+            text-decoration: none;
             color: #f5f4f4;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            padding-top: 12px;
-            font-weight: bold;
+            &:hover {
+              color: #014242;
+              transition: 0.5s;
+            }
+          }
+          .active {
+            color: #014242;
+          }
         }
+      }
     }
+  }
+  .site-section {
+    width: 100%;
+    display: flex;
+    background-color: #f3f3f3;
+    @media screen and (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+    }
+    .my-image {
+      width: 50%;
+      margin-left: 7%;
+      @media screen and (max-width: 768px) {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      img {
+        width: 100%;
+      }
+    }
+    .personal-information {
+      width: 39%;
+      margin-right: 4%;
+      margin-left: 55px;
+      margin-top: 50px;
+      @media screen and (max-width: 768px) {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+      }
+      h3 {
+        font-weight: 600;
+        color: rgb(60, 120, 120);
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .more-about {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 55px;
+    margin-bottom: 30px;
+    .extra-information {
+      margin-right: 30px;
+      @media screen and (max-width: 660px) {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      h3 {
+        font-weight: 600;
+        margin-bottom: 40px;
+        text-align: center;
+        span {
+          color: rgb(60, 120, 120);
+        }
+      }
+      table {
+        text-align: center;
+        border: none;
+        tr {
+          width: 100%;
+          th {
+            border: none;
+            border-color: darkslategray;
+            padding: 10px;
+            background-color: darkslategray;
+            color: #f5f4f4;
+          }
+          td {
+            border: none;
+            border-color: darkslategray;
+            padding: 5px 30px;
+            background-color: #6fbba2;
+          }
+        }
+      }
+    }
+    .sidebar {
+      a {
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+      @media screen and (max-width: 660px) {
+        display: none;
+      }
+    }
+  }
+  .sidebar-bottom {
+    display: none;
+    @media screen and (max-width: 660px) {
+      display: block;
+      position: relative;
+      width: 90%;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 20px;
+    }
+  }
+  .about-footer {
+    width: 100%;
+    height: 22vh;
+    background-color: rgb(70, 130, 130);
+    flex-shrink: 0;
+    .contacts {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      padding-top: 40px;
+      p {
+        font-size: 17px;
+        font-weight: bold;
+        color: #f5f4f4;
+      }
+      .links {
+        a {
+          text-decoration: none;
+          margin-left: 7px;
+          i {
+            font-size: 22px;
+            color: black;
+            &:hover {
+              color: #f5f4f4;
+              transition: 0.5s;
+            }
+          }
+        }
+      }
+    }
+    .date {
+      color: #f5f4f4;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      padding-top: 12px;
+      font-weight: bold;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .about-navbar {
+    background: rgb(70, 130, 130);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999 !important;
+  }
+  .line {
+    width: 30px;
+    height: 3px;
+    background-color: white !important;
+    margin: 5px;
+  }
+  .hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 35%;
+    z-index: 99999;
+  }
+  .nav-links {
+    position: fixed;
+    top: 39px;
+    background-color: rgb(70, 130, 130) !important;
+    height: 97vh;
+    width: 100%;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: space-evenly !important;
+    z-index: 99;
+    clip-path: circle(100px at 90% -25%);
+    -webkit-clip-path: circle(100px at 90% -10%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+  }
+  .personal-logo {
+    z-index: 9999;
+  }
+  .nav-links.open {
+    clip-path: circle(1000px at 90% -10%);
+    -webkit-clip-path: circle(1000px at 90% -10%);
+    pointer-events: all;
+  }
+  .site-section {
+    position: relative;
+    top: 132px;
+  }
+  //   .my-image {
+  //     margin-top: 132px;
+  //   }
+  //   .my-image img {
+  //     height: 100%;
+  //   }
 }

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<!-- Fig. 9.9: scoping.html -->
+<!-- Scoping example. -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="shortcut icon" href="../assets/Images/BK.Logo.png" />
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <title>Scoping Example</title>
+        <style>
+            p {
+                margin: 0;
+            }  
+            p.space {
+                margin-top: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="examples-nav">
+            <button class="examples-button">
+               <a href="../chapter9.html">
+                  <i class="fas fa-arrow-left"></i>
+                  Go Back
+               </a>
+            </button>
+        </nav>
+        <div id="results"></div>
+
+        <script>
+            var output;
+            var x = 1;
+
+            function start() 
+            {
+                var x = 5;
+
+                output = "<p>local x in start is " + x + "</p>";
+
+                functionA();
+                functionB();
+                functionA();
+                functionB();
+
+                output += "<p class='space'>local x in start is " + x + "</p>";
+                document.getElementById( "results" ).innerHTML = output;
+            }
+
+            function functionA() {
+                var x = 25;
+
+                output += "<p class='space'>local x in functionA is " + x + " after entering functionA</p>";
+                ++x;
+                output += "<p>local x in functionA is " + x + " before exiting functionA</p>";
+            }
+
+            function functionB() {
+
+                output += "<p class='space'>global variable x is " + x + " on entering functionB";
+                x *= 10;
+                output += "<p>global variable x is " + x + " on exiting functionB</p>";
+            }
+
+            window.addEventListener( "load", start, false );
+        </script>
+    </body>
+</html>

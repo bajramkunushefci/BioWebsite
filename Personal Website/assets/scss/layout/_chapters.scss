@@ -1,60 +1,68 @@
 .chaptersWrapper {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: #f3f3f3;
+  button {
+    margin-top: 20px;
+    margin-left: 20px;
+    border: none;
+    padding: 15px;
     background-color: #f3f3f3;
-    button {
-        margin-top: 20px;
-        margin-left: 20px;
-        border: none;
-        padding: 15px;
-        background-color: #f3f3f3;
-        letter-spacing: 1px;
-        a {
-            text-decoration: none;
-            color: black;
-            font-weight: 700;
-        }
+    letter-spacing: 1px;
+    a {
+      text-decoration: none;
+      color: black;
+      font-weight: 700;
     }
-    .chapters-links {
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        h4 {
-            margin-bottom: 20px;
-            font-weight: 600;
-            color: darkslategray;
-        }
-        li {
-            a {
-                // color: #258b69;
-                // color: darkolivegreen;
-                color: darkslateblue;
-                &:hover {
-                    text-decoration: none;
-                    color: #000000;
-                }
-            }
-            .different {
-                padding-left: 9px;
-            }
-        }
+  }
+  .chapters-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h4 {
+      margin-bottom: 20px;
+      font-weight: 600;
+      color: darkslategray;
     }
+    li {
+      a {
+        // color: #258b69;
+        // color: darkolivegreen;
+        color: darkslateblue;
+        &:hover {
+          text-decoration: none;
+          color: #000000;
+        }
+      }
+      .different {
+        padding-left: 9px;
+      }
+    }
+  }
+}
+.examples {
+  background-color: #f3f3f3;
 }
 .examples-nav {
-    width: 100%;
-    .examples-button {
-        margin-top: 20px;
-        margin-left: 20px;
-        margin-bottom: 20px;
-        border: none;
-        padding: 15px;
-        background-color: #f3f3f3;
-        letter-spacing: 1px;
-        a {
-            text-decoration: none;
-            color: black;
-            font-weight: 700;
-        }
+  width: 100%;
+  .examples-button {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border: none;
+    padding: 15px;
+    background-color: #f3f3f3;
+    letter-spacing: 1px;
+    a {
+      text-decoration: none;
+      color: black;
+      font-weight: 700;
     }
+  }
+}
+@media screen and (max-width: 768px) {
+  .examples {
+    background-color: #f3f3f3 !important;
+  }
 }

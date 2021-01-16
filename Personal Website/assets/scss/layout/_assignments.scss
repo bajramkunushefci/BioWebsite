@@ -1,179 +1,220 @@
 html {
+  height: 100%;
+  body {
     height: 100%;
-    body {
-        height: 100%;
+    display: flex;
+    flex-direction: column;
+    .assignments-nav {
+      width: 100%;
+      .assignments-navbar {
         display: flex;
-        flex-direction: column;
-        .assignments-nav {
-            width: 100%;
-            nav {
-                display: flex;
-                align-items: center;
-                // background-color: #6fbba2;
-                // background-color: rgb(57, 110, 110);
-                // background-color: rgb(60, 120, 120);
-                background-color: rgb(70, 130, 130);
-                height: 19vh;
-                font-weight: 600;
-                .personal-logo {
-                    width: 100%;
-                    height: 100%;
-                    img {
-                        max-width: 100%;
-                        height: 100%;
-                        cursor: pointer;
-                    }
-                }
-                ul {
-                    width: 100%;
-                    list-style: none;
-                    display: flex;
-                    justify-content: space-around;
-                    li {
-                        @media screen and (max-width: 780px) {
-                            padding-left: 10px;
-                            &:first-child {
-                                padding-left: 0;
-                            }
-                        }
-                        a {
-                            text-decoration: none;
-                            color: #f5f4f4;
-                            &:hover {
-                                color: #014242;
-                                transition: .5s;
-                            }
-                        }
-                        .active {
-                            color: #014242;
-                        }
-                    }
-                }
-            }
+        align-items: center;
+        background-color: rgb(70, 130, 130);
+        height: 19vh;
+        font-weight: 600;
+        .personal-logo {
+          width: 100%;
+          height: 100%;
+          img {
+            max-width: 100%;
+            height: 100%;
+            cursor: pointer;
+          }
         }
-        .assignments-section {
-            flex: 1 0 auto;
-            h2 {
-                text-align: center;
-                margin-top: 25px;
-                margin-bottom: 15px;
-                color: rgb(60, 120, 120);
+        .nav-links {
+          width: 100%;
+          list-style: none;
+          display: flex;
+          justify-content: space-around;
+          li {
+            a {
+              text-decoration: none;
+              color: #f5f4f4;
+              &:hover {
+                color: #014242;
+                transition: 0.5s;
+              }
             }
-            p {
-                text-align: center;
-                margin-bottom: 30px;
+            .active {
+              color: #014242;
             }
-            .homework-projects {
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                .homework {
-                    height: auto;
-                    margin-right: 25px;
-                    ul {
-                        list-style: none;
-                        width: 8em;
-                        padding-left: 24px;
-                        padding-top: 8px;
-                        padding-bottom: 3px;
-                        background-color: rgb(57, 109, 109);
-                        color: white;
-                        cursor: pointer;
-                        font-weight: 600;
-                        border: 1px solid  rgb(57, 109, 109);
-                        &:hover a {
-                            display: block;
-                            padding-left: 5px;
-                        }
-                        h6 {
-                            font-weight: 600;
-                        }
-                        li {
-                            width: 100%;
-                            a {
-                                text-decoration: none;
-                                color: white;
-                                padding-top: 5px;
-                                display: none;
-                                font-weight: normal;
-                            }
-                        }
-                    }
-                }
-                .projects {
-                    height: auto;
-                    margin-left: 25px;
-                    ul {
-                        list-style: none;
-                        width: 8em;
-                        padding-left: 28px;
-                        padding-top: 8px;
-                        padding-bottom: 3px;
-                        background-color: rgb(57, 109, 109);
-                        color: white;
-                        cursor: pointer;
-                        font-weight: 600;
-                        border: 1px solid  rgb(57, 109, 109);
-                        &:hover a {
-                            display: block;
-                            padding-left: 5px;
-                        }
-                        h6 {
-                            font-weight: 600;
-                            padding-left: 6px;
-                        }
-                        li {
-                            width: 100%;
-                            a {
-                                text-decoration: none;
-                                color: white;
-                                padding-top: 5px;
-                                display: none;
-                                font-weight: normal;
-                            }
-                        }
-                    }
-                }
-            }
+          }
         }
-        .assignments-footer {
-            width: 100%;
-            height: 22vh;
-            background-color: rgb(70, 130, 130);
-            flex-shrink: 0;
-            .contacts {
-                width: 100%;
-                display: flex;
-                justify-content: space-around;
-                padding-top: 40px;
-                p {
-                    font-size: 17px;
-                    font-weight: bold;
-                    color: #f5f4f4;
-                }
-                .links {
-                    a {
-                        text-decoration: none;
-                        margin-left: 7px;
-                        i {
-                            font-size: 22px;
-                            color: black;
-                            &:hover {
-                                color: #f5f4f4;
-                                transition: .5s;    
-                            }
-                        }
-                    }
-                }
-            }
-            .date {
-                color: #f5f4f4;
-                margin: 0;
-                padding: 0;
-                text-align: center;
-                padding-top: 12px;
-                font-weight: bold;
-            }
-        }
+      }
     }
+    .assignments-section {
+      flex: 1 0 auto;
+      h2 {
+        text-align: center;
+        margin-top: 25px;
+        margin-bottom: 15px;
+        color: rgb(60, 120, 120);
+      }
+      p {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      .homework-projects {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        .homework {
+          height: auto;
+          margin-right: 25px;
+          ul {
+            list-style: none;
+            width: 8em;
+            padding-left: 24px;
+            padding-top: 8px;
+            padding-bottom: 3px;
+            background-color: rgb(57, 109, 109);
+            color: white;
+            cursor: pointer;
+            font-weight: 600;
+            border: 1px solid rgb(57, 109, 109);
+            &:hover a {
+              display: block;
+              padding-left: 5px;
+            }
+            h6 {
+              font-weight: 600;
+            }
+            li {
+              width: 100%;
+              a {
+                text-decoration: none;
+                color: white;
+                padding-top: 5px;
+                display: none;
+                font-weight: normal;
+              }
+            }
+          }
+        }
+        .projects {
+          height: auto;
+          margin-left: 25px;
+          ul {
+            list-style: none;
+            width: 8em;
+            padding-left: 28px;
+            padding-top: 8px;
+            padding-bottom: 3px;
+            background-color: rgb(57, 109, 109);
+            color: white;
+            cursor: pointer;
+            font-weight: 600;
+            border: 1px solid rgb(57, 109, 109);
+            &:hover a {
+              display: block;
+              padding-left: 5px;
+            }
+            h6 {
+              font-weight: 600;
+              padding-left: 6px;
+            }
+            li {
+              width: 100%;
+              a {
+                text-decoration: none;
+                color: white;
+                padding-top: 5px;
+                display: none;
+                font-weight: normal;
+              }
+            }
+          }
+        }
+      }
+    }
+    .assignments-footer {
+      width: 100%;
+      height: 22vh;
+      background-color: rgb(70, 130, 130);
+      flex-shrink: 0;
+      .contacts {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding-top: 40px;
+        p {
+          font-size: 17px;
+          font-weight: bold;
+          color: #f5f4f4;
+        }
+        .links {
+          a {
+            text-decoration: none;
+            margin-left: 7px;
+            i {
+              font-size: 22px;
+              color: black;
+              &:hover {
+                color: #f5f4f4;
+                transition: 0.5s;
+              }
+            }
+          }
+        }
+      }
+      .date {
+        color: #f5f4f4;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        padding-top: 12px;
+        font-weight: bold;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .assignments-navbar {
+    background: rgb(70, 130, 130);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999 !important;
+  }
+  .line {
+    width: 30px;
+    height: 3px;
+    background-color: white !important;
+    margin: 5px;
+  }
+  .hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 35%;
+    z-index: 99999;
+  }
+  .nav-links {
+    position: fixed;
+    top: 39px;
+    background-color: rgb(70, 130, 130) !important;
+    height: 97vh;
+    width: 100%;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: space-evenly !important;
+    z-index: 99;
+    clip-path: circle(100px at 90% -25%);
+    -webkit-clip-path: circle(100px at 90% -10%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+  }
+  .personal-logo {
+    z-index: 9999;
+  }
+  .nav-links.open {
+    clip-path: circle(1000px at 90% -10%);
+    -webkit-clip-path: circle(1000px at 90% -10%);
+    pointer-events: all;
+  }
+  .assignments-section {
+    margin-top: 121px;
+  }
 }

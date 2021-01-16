@@ -5,45 +5,37 @@ body {
 body .main-nav {
   width: 100%;
 }
-body .main-nav nav {
+body .main-nav .main-navbar {
   display: flex;
   align-items: center;
   background-color: #468282;
   height: 19vh;
   font-weight: 600;
 }
-body .main-nav nav .personal-logo {
+body .main-nav .main-navbar .personal-logo {
   width: 100%;
   height: 100%;
 }
-body .main-nav nav .personal-logo img {
+body .main-nav .main-navbar .personal-logo img {
   max-width: 100%;
   height: 100%;
   cursor: pointer;
 }
-body .main-nav nav ul {
+body .main-nav .main-navbar .nav-links {
   width: 100%;
   list-style: none;
   display: flex;
   justify-content: space-around;
 }
-@media screen and (max-width: 780px) {
-  body .main-nav nav ul li {
-    padding-left: 10px;
-  }
-  body .main-nav nav ul li:first-child {
-    padding-left: 0;
-  }
-}
-body .main-nav nav ul li a {
+body .main-nav .main-navbar .nav-links li a {
   text-decoration: none;
   color: #f5f4f4;
 }
-body .main-nav nav ul li a:hover {
+body .main-nav .main-navbar .nav-links li a:hover {
   color: #014242;
   transition: 0.5s;
 }
-body .main-nav nav ul li .active {
+body .main-nav .main-navbar .nav-links li .active {
   color: #014242;
 }
 body .sections-together {
@@ -173,6 +165,68 @@ body .main-footer .date {
   font-weight: bold;
 }
 
+@media screen and (max-width: 768px) {
+  .main-navbar {
+    background: #468282;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999 !important;
+  }
+
+  .line {
+    width: 30px;
+    height: 3px;
+    background-color: white !important;
+    margin: 5px;
+  }
+
+  .hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 35%;
+    z-index: 99999;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 39px;
+    background-color: #468282 !important;
+    height: 97vh;
+    width: 100%;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: space-evenly !important;
+    z-index: 99;
+    clip-path: circle(100px at 90% -25%);
+    -webkit-clip-path: circle(100px at 90% -10%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+  }
+
+  .personal-logo {
+    z-index: 9999;
+  }
+
+  .nav-links.open {
+    clip-path: circle(1000px at 90% -10%);
+    -webkit-clip-path: circle(1000px at 90% -10%);
+    pointer-events: all;
+  }
+
+  .section-1 {
+    height: 100vh !important;
+    background-size: inherit !important;
+    background-position-x: 69% !important;
+  }
+
+  .site-heading {
+    top: 273px !important;
+  }
+}
 html {
   height: 100%;
 }
@@ -184,45 +238,37 @@ html body {
 html body .assignments-nav {
   width: 100%;
 }
-html body .assignments-nav nav {
+html body .assignments-nav .assignments-navbar {
   display: flex;
   align-items: center;
   background-color: #468282;
   height: 19vh;
   font-weight: 600;
 }
-html body .assignments-nav nav .personal-logo {
+html body .assignments-nav .assignments-navbar .personal-logo {
   width: 100%;
   height: 100%;
 }
-html body .assignments-nav nav .personal-logo img {
+html body .assignments-nav .assignments-navbar .personal-logo img {
   max-width: 100%;
   height: 100%;
   cursor: pointer;
 }
-html body .assignments-nav nav ul {
+html body .assignments-nav .assignments-navbar .nav-links {
   width: 100%;
   list-style: none;
   display: flex;
   justify-content: space-around;
 }
-@media screen and (max-width: 780px) {
-  html body .assignments-nav nav ul li {
-    padding-left: 10px;
-  }
-  html body .assignments-nav nav ul li:first-child {
-    padding-left: 0;
-  }
-}
-html body .assignments-nav nav ul li a {
+html body .assignments-nav .assignments-navbar .nav-links li a {
   text-decoration: none;
   color: #f5f4f4;
 }
-html body .assignments-nav nav ul li a:hover {
+html body .assignments-nav .assignments-navbar .nav-links li a:hover {
   color: #014242;
   transition: 0.5s;
 }
-html body .assignments-nav nav ul li .active {
+html body .assignments-nav .assignments-navbar .nav-links li .active {
   color: #014242;
 }
 html body .assignments-section {
@@ -348,48 +394,96 @@ html body .assignments-footer .date {
   font-weight: bold;
 }
 
+@media screen and (max-width: 768px) {
+  .assignments-navbar {
+    background: #468282;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999 !important;
+  }
+
+  .line {
+    width: 30px;
+    height: 3px;
+    background-color: white !important;
+    margin: 5px;
+  }
+
+  .hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 35%;
+    z-index: 99999;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 39px;
+    background-color: #468282 !important;
+    height: 97vh;
+    width: 100%;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: space-evenly !important;
+    z-index: 99;
+    clip-path: circle(100px at 90% -25%);
+    -webkit-clip-path: circle(100px at 90% -10%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+  }
+
+  .personal-logo {
+    z-index: 9999;
+  }
+
+  .nav-links.open {
+    clip-path: circle(1000px at 90% -10%);
+    -webkit-clip-path: circle(1000px at 90% -10%);
+    pointer-events: all;
+  }
+
+  .assignments-section {
+    margin-top: 121px;
+  }
+}
 body {
   background-color: #f3f3f3;
 }
-body .about-nav nav {
+body .about-nav .about-navbar {
   display: flex;
   align-items: center;
   background-color: #468282 !important;
   height: 19vh;
   font-weight: 600;
 }
-body .about-nav nav .personal-logo {
+body .about-nav .about-navbar .personal-logo {
   width: 100%;
   height: 100%;
 }
-body .about-nav nav .personal-logo img {
+body .about-nav .about-navbar .personal-logo img {
   max-width: 100%;
   height: 100%;
   cursor: pointer;
 }
-body .about-nav nav ul {
+body .about-nav .about-navbar .nav-links {
   width: 100%;
   list-style: none;
   display: flex;
   justify-content: space-around;
 }
-@media screen and (max-width: 780px) {
-  body .about-nav nav ul li {
-    padding-left: 10px;
-  }
-  body .about-nav nav ul li:first-child {
-    padding-left: 0;
-  }
-}
-body .about-nav nav ul li a {
+body .about-nav .about-navbar .nav-links li a {
   text-decoration: none;
   color: #f5f4f4;
 }
-body .about-nav nav ul li a:hover {
+body .about-nav .about-navbar .nav-links li a:hover {
   color: #014242;
   transition: 0.5s;
 }
-body .about-nav nav ul li .active {
+body .about-nav .about-navbar .nav-links li .active {
   color: #014242;
 }
 body .site-section {
@@ -397,7 +491,7 @@ body .site-section {
   display: flex;
   background-color: #f3f3f3;
 }
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 768px) {
   body .site-section {
     display: flex;
     flex-direction: column;
@@ -407,7 +501,7 @@ body .site-section .my-image {
   width: 50%;
   margin-left: 7%;
 }
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 768px) {
   body .site-section .my-image {
     width: 90%;
     margin-left: auto;
@@ -423,11 +517,12 @@ body .site-section .personal-information {
   margin-left: 55px;
   margin-top: 50px;
 }
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 768px) {
   body .site-section .personal-information {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 30px;
   }
 }
 body .site-section .personal-information h3 {
@@ -546,48 +641,97 @@ body .about-footer .date {
   font-weight: bold;
 }
 
+@media screen and (max-width: 768px) {
+  .about-navbar {
+    background: #468282;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999 !important;
+  }
+
+  .line {
+    width: 30px;
+    height: 3px;
+    background-color: white !important;
+    margin: 5px;
+  }
+
+  .hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 35%;
+    z-index: 99999;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 39px;
+    background-color: #468282 !important;
+    height: 97vh;
+    width: 100%;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: space-evenly !important;
+    z-index: 99;
+    clip-path: circle(100px at 90% -25%);
+    -webkit-clip-path: circle(100px at 90% -10%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+  }
+
+  .personal-logo {
+    z-index: 9999;
+  }
+
+  .nav-links.open {
+    clip-path: circle(1000px at 90% -10%);
+    -webkit-clip-path: circle(1000px at 90% -10%);
+    pointer-events: all;
+  }
+
+  .site-section {
+    position: relative;
+    top: 132px;
+  }
+}
 .contact-nav {
   background-color: deepskyblue;
 }
-.contact-nav nav {
+.contact-nav .contact-navbar {
   display: flex;
   align-items: center;
   background-color: #468282;
   height: 19vh;
   font-weight: 600;
 }
-.contact-nav nav .personal-logo {
+.contact-nav .contact-navbar .personal-logo {
   width: 100%;
   height: 100%;
 }
-.contact-nav nav .personal-logo img {
+.contact-nav .contact-navbar .personal-logo img {
   max-width: 100%;
   height: 100%;
   cursor: pointer;
 }
-.contact-nav nav ul {
+.contact-nav .contact-navbar .nav-links {
   width: 100%;
   list-style: none;
   display: flex;
   justify-content: space-around;
 }
-@media screen and (max-width: 780px) {
-  .contact-nav nav ul li {
-    padding-left: 10px;
-  }
-  .contact-nav nav ul li:first-child {
-    padding-left: 0;
-  }
-}
-.contact-nav nav ul li a {
+.contact-nav .contact-navbar .nav-links li a {
   text-decoration: none;
   color: #f5f4f4;
 }
-.contact-nav nav ul li a:hover {
+.contact-nav .contact-navbar .nav-links li a:hover {
   color: #014242;
   transition: 0.5s;
 }
-.contact-nav nav ul li .active {
+.contact-nav .contact-navbar .nav-links li .active {
   color: #014242;
 }
 
@@ -766,6 +910,62 @@ body .about-footer .date {
   font-weight: bold;
 }
 
+@media screen and (max-width: 768px) {
+  .contact-navbar {
+    background: #468282;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999 !important;
+  }
+
+  .line {
+    width: 30px;
+    height: 3px;
+    background-color: white !important;
+    margin: 5px;
+  }
+
+  .hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 35%;
+    z-index: 99999;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 39px;
+    background-color: #468282 !important;
+    height: 97vh;
+    width: 100%;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: space-evenly !important;
+    z-index: 99;
+    clip-path: circle(100px at 90% -25%);
+    -webkit-clip-path: circle(100px at 90% -10%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+  }
+
+  .personal-logo {
+    z-index: 9999;
+  }
+
+  .nav-links.open {
+    clip-path: circle(1000px at 90% -10%);
+    -webkit-clip-path: circle(1000px at 90% -10%);
+    pointer-events: all;
+  }
+
+  .contact-section {
+    margin-top: 121px;
+  }
+}
 .chaptersWrapper {
   width: 100%;
   height: 100%;
@@ -806,6 +1006,10 @@ body .about-footer .date {
   padding-left: 9px;
 }
 
+.examples {
+  background-color: #f3f3f3;
+}
+
 .examples-nav {
   width: 100%;
 }
@@ -824,48 +1028,45 @@ body .about-footer .date {
   font-weight: 700;
 }
 
+@media screen and (max-width: 768px) {
+  .examples {
+    background-color: #f3f3f3 !important;
+  }
+}
 .hobbies-nav {
   width: 100%;
 }
-.hobbies-nav nav {
+.hobbies-nav .hobby-navbar {
   display: flex;
   align-items: center;
   background-color: #468282;
   height: 19vh;
   font-weight: 600;
 }
-.hobbies-nav nav .personal-logo {
+.hobbies-nav .hobby-navbar .personal-logo {
   width: 100%;
   height: 100%;
 }
-.hobbies-nav nav .personal-logo img {
+.hobbies-nav .hobby-navbar .personal-logo img {
   max-width: 100%;
   height: 100%;
   cursor: pointer;
 }
-.hobbies-nav nav ul {
+.hobbies-nav .hobby-navbar .nav-links {
   width: 100%;
   list-style: none;
   display: flex;
   justify-content: space-around;
 }
-@media screen and (max-width: 780px) {
-  .hobbies-nav nav ul li {
-    padding-left: 10px;
-  }
-  .hobbies-nav nav ul li:first-child {
-    padding-left: 0;
-  }
-}
-.hobbies-nav nav ul li a {
+.hobbies-nav .hobby-navbar .nav-links li a {
   text-decoration: none;
   color: #f5f4f4;
 }
-.hobbies-nav nav ul li a:hover {
+.hobbies-nav .hobby-navbar .nav-links li a:hover {
   color: #014242;
   transition: 0.5s;
 }
-.hobbies-nav nav ul li .active {
+.hobbies-nav .hobby-navbar .nav-links li .active {
   color: #014242;
 }
 
@@ -962,4 +1163,62 @@ body .about-footer .date {
   text-align: center;
   padding-top: 12px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .section-footer {
+    position: relative;
+    top: 115px;
+  }
+
+  .hobby-navbar {
+    background: #468282;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999 !important;
+  }
+
+  .line {
+    width: 30px;
+    height: 3px;
+    background-color: white !important;
+    margin: 5px;
+  }
+
+  .hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 35%;
+    z-index: 99999;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 39px;
+    background-color: #468282 !important;
+    height: 97vh;
+    width: 100%;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: space-evenly !important;
+    z-index: 99;
+    clip-path: circle(100px at 90% -25%);
+    -webkit-clip-path: circle(100px at 90% -10%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+  }
+
+  .personal-logo {
+    z-index: 9999;
+  }
+
+  .nav-links.open {
+    clip-path: circle(1000px at 90% -10%);
+    -webkit-clip-path: circle(1000px at 90% -10%);
+    pointer-events: all;
+  }
 }
