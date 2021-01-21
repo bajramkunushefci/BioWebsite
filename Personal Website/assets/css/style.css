@@ -444,6 +444,7 @@ html body .assignments-footer .date {
     clip-path: circle(1000px at 90% -10%);
     -webkit-clip-path: circle(1000px at 90% -10%);
     pointer-events: all;
+    padding: 0;
   }
 
   .assignments-section {
